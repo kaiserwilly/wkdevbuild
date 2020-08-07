@@ -1,0 +1,22 @@
+state={
+	id=811
+	name="STATE_811"
+	
+	state_category=town
+	
+	history={
+		owner = LEA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+		add_core_of = LEA
+
+	}
+	
+	provinces={
+		3946 6915 6917 9853 
+	}
+	manpower= 450500
+	buildings_max_level_factor=1.000
+}

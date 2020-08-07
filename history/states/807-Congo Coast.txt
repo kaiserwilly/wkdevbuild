@@ -1,0 +1,26 @@
+state={
+	id=807
+	name="STATE_807"
+	
+	state_category=rural
+	
+	history={
+		owner = BEL
+		buildings = {
+			infrastructure = 4
+			10968 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			5117 3 
+		}
+		add_core_of = ANG
+	}
+	
+	provinces={
+		5117 10968 12925 
+	}
+	manpower= 370500
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,22 @@
+ideas = {
+
+	country = {
+		agreement_england = {
+			
+			allowed = {
+				original_tag = ENG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05	
+			}
+		}
+    }
+}

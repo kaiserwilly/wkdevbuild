@@ -1,0 +1,19 @@
+spriteTypes = {	
+	
+	spriteType = { 
+		name = "GFX_idea_place_in_sun"
+		texturefile = "gfx/interface/ideas/place_in_sun.dds"
+	}
+    spriteType = { 
+		name = "GFX_idea_hohenzollern"
+		texturefile = "gfx/interface/ideas/hohenzollern.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_habsburg"
+		texturefile = "gfx/interface/ideas/habsburg.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_multinational_state"
+		texturefile = "gfx/interface/ideas/multinational_state.dds"
+	}
+}

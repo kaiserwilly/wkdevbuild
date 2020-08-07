@@ -1,0 +1,26 @@
+state={
+	id=791
+	name="STATE_791"
+	
+	state_category = rural
+	
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			2202 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = MZB
+
+		add_claim_by = GCG
+	}
+	
+	provinces={
+		2123 2159 2180 2202 2217 5164 10972 12950 12971 
+	}
+	manpower=1125000
+	buildings_max_level_factor=1.000
+}

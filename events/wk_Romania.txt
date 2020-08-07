@@ -1,0 +1,308 @@
+﻿###########################
+######Romanian Events######
+###########################
+
+add_namespace = Romania
+
+###Romania demands Transylvania
+
+country_event = {
+	id = Romania.1
+	title = Romania.1.t
+	desc = Romania.1.desc
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes
+	
+	option = { #agrees
+		name = Romania.1.a
+		ai_chance = {
+			factor = 20
+			 modifier = {
+            factor = 3
+           strength_ratio = { tag = ROM ratio < 1 }
+           }
+		   modifier = {
+            factor = 0
+           strength_ratio = { tag = ROM ratio > 1 }
+           }
+		}
+		ROM = { country_event = Romania.2}
+	}
+
+	option = { #bugs bunnie no
+		name = Romania.1.b
+		ai_chance = {
+			factor = 20
+			 modifier = {
+            factor = 3
+           strength_ratio = { tag = ROM ratio > 1 }
+           }
+		}
+		ROM = { country_event = Romania.3 }	
+	}
+
+	option = { #insulted==>wargoal
+		name = romania.1.c
+		ai_chance = {
+			factor = 20
+			 modifier = {
+            factor = 4
+           strength_ratio = { tag = ROM ratio > 1 }
+           }
+		}
+		ROM = { country_event = Romania.4 }	
+	}
+
+}
+country_event = {
+	id = Romania.2
+	title = Romania.2.t
+	desc = Romania.2.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #epic
+		name = Romania.2.a
+		every_state = { 
+    limit = { is_owned_by = AUH  is_core_of = ROM }
+    ROM = { transfer_state = PREV }
+}
+	}
+
+}
+country_event = {
+	id = Romania.3
+	title = Romania.3.t
+	desc = Romania.3.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #victory is certain, to war!
+		name = Romania.3.a
+     create_wargoal = {
+	type = take_state_focus
+	target = AUH
+	generator = { 76  84 83 82 }
+}
+	}
+	option = { #they've called our bluff...
+		name = Romania.3.b
+     ROM = { country_event = Romania.5}
+	}
+
+}
+country_event = {
+	id = Romania.4
+	title = Romania.4.t
+	desc = Romania.4.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #let them come
+		name = Romania.3.a
+     AUH = { create_wargoal = { type = puppet_wargoal_focus target = ROM } }
+	}
+	
+
+}
+country_event = {
+	id = Romania.5
+	title = Romania.5.t
+	desc = Romania.5.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #romania backs down
+		name = Romania.5.a
+     
+}
+	}
+	#offer alliance to Italy
+	country_event = {
+	id = Romania.6
+	title = Romania.6.t
+	desc = Romania.6.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #Italy accepts
+		name = Romania.6.a
+		ai_chance = {
+			factor = 50
+			 modifier = {
+            factor = 2
+           strength_ratio = { tag = ROM ratio <0.4 }
+           }
+		}
+		ROM = { country_event = Romania.7}
+     
+}
+option = { #Italy declines
+		name = Romania.6.b
+     ai_chance = {
+			factor = 30
+			 modifier = {
+            factor = 0
+           strength_ratio = { tag = ROM ratio < 0.4 }
+           }
+		}
+		ROM = { country_event = Romania.8}
+}
+	}
+	country_event = {
+	id = Romania.7
+	title = Romania.7.t
+	desc = Romania.7.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #for trajan!
+		name = Romania.7.a
+		add_to_faction = ITA
+     
+}
+	}
+	country_event = {
+	id = Romania.8
+	title = Romania.8.t
+	desc = Romania.8.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #we don't need you anyways
+		name = Romania.8.a
+		
+     
+}
+	}
+	country_event = {
+	id = Romania.9
+	title = Romania.9.t
+	desc = Romania.9.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = Romania.9.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+            factor = 2
+           strength_ratio = { tag = ROM ratio <0.4 }
+		}
+		}
+		ROM = { country_event = Romania.10}
+     
+}
+    option = { 
+		name = Romania.9.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+            factor = 0
+           strength_ratio = { tag = ROM ratio <0.4 }
+		}
+		
+     
+           }
+             ROM = { country_event = Romania.11}
+	}
+}
+    country_event = {
+	id = Romania.10
+	title = Romania.10.t
+	desc = Romania.10.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #the alliance grows
+		name = Romania.10.a
+		add_to_faction = SPR
+     
+}
+	}
+	country_event = {
+	id = Romania.11
+	title = Romania.11.t
+	desc = Romania.11.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #no
+		name = Romania.11.a		
+}
+	}
+	country_event = {
+	id = Romania.12
+	title = Romania.12.t
+	desc = Romania.12.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = Romania.12.a
+		ai_chance = {
+			factor = 70
+			modifier = {
+            factor = 2
+           strength_ratio = { tag = ROM ratio <0.4 }
+			
+		}
+		}
+		ROM = { country_event = Romania.13}
+     
+}
+    option = { 
+		name = Romania.12.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+            factor = 0
+           strength_ratio = { tag = ROM ratio <0.4 }
+		}
+		
+     
+      }
+      ROM = { country_event = Romania.14}
+	}
+	}
+	country_event = {
+	id = Romania.13
+	title = Romania.13.t
+	desc = Romania.13.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #the alliance grows
+		name = Romania.13.a
+		add_to_faction = POR
+     
+}
+	}
+	country_event = {
+	id = Romania.14
+	title = Romania.14.t
+	desc = Romania.14.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #no
+		name = Romania.14.a
+		
+     
+}
+	}

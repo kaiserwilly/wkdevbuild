@@ -1,0 +1,30 @@
+
+state={
+	id=736
+	name="STATE_736"
+
+	history={
+		victory_points = {
+			6626 1 
+		}
+		owner = AUH
+		add_core_of = AUH
+		add_core_of = TRT
+		buildings = {
+			infrastructure = 2
+			6626 = {
+				naval_base = 5
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		6626 11735 
+	}
+	manpower=1063159
+	buildings_max_level_factor=1.000
+	state_category=city
+}

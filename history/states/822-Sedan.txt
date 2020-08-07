@@ -1,0 +1,23 @@
+state={
+	id=822
+	name="STATE_822"
+	manpower = 142500
+	
+	state_category = rural
+	
+	history={
+		owner = FRA
+		victory_points = {
+			3560 1
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+		set_demilitarized_zone = yes
+	}
+	
+	provinces={
+	    3560 5291
+	}
+}

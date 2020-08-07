@@ -1,0 +1,519 @@
+############# Weltkrieg Events ##############
+
+#############################################
+################GERMAN EMPIRE################
+#############################################
+
+add_namespace = wk_ger
+
+#################################################################
+
+#CONGRESS OF WARSAW
+country_event = {
+	id = wk_ger.1
+	title = wk_ger.1.t
+	desc = wk_ger.1.d
+	picture = GFX_1warsaw_congress
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = wk_ger.1.a
+		POL = {
+		    annex_country = {
+                target = NPR
+                transfer_troops = yes
+            }
+			transfer_state = 10
+			add_state_core = 10
+			add_state_core = 90
+			add_state_core = 87
+			add_state_core = 794
+			add_ai_strategy = {
+                type = alliance
+                id = GER
+                value = 200
+            }
+		}
+		LEA = { 
+		    remove_state_core = 10
+		}
+		NPR = { 
+		    remove_state_core = 90
+			remove_state_core = 87
+			remove_state_core = 794
+		}	
+		GER = {
+		    end_puppet = NPR
+			end_puppet = POL
+			add_threat = -5
+		}
+    }
+	
+	option = { 
+		name = wk_ger.1.b
+		POL = {
+		    transfer_state = 90
+			transfer_state = 794
+			transfer_state = 10
+			add_state_core = 90
+			add_state_core = 794
+			add_state_core = 10
+			add_state_claim = 98
+			add_state_claim = 87
+			annex_country = {
+                target = NPR
+                transfer_troops = yes
+            }
+			leave_faction = yes
+		}
+		GER = {
+		    set_state_owner = 98
+			set_state_owner = 87
+			add_state_core = 98
+			add_state_core = 87
+		    end_puppet = NPR
+			end_puppet = POL
+			add_threat = 10
+		}
+        LEA = { 
+		    remove_state_core = 10
+		}
+		NPR = { 
+		    remove_state_core = 90
+			remove_state_core = 87
+			remove_state_core = 794
+		}		
+    }
+	
+	option = { 
+		name = wk_ger.1.b
+		POL = {
+		    transfer_state = 90
+			transfer_state = 794
+			add_state_core = 90
+			add_state_core = 794
+			add_state_claim = 98
+			add_state_claim = 87
+			add_state_claim = 10
+			create_wargoal = {
+	            type = take_state_focus
+	            target = GER
+	            generator = { 10 }
+            }
+			annex_country = {
+                target = NPR
+                transfer_troops = yes
+            }
+			leave_faction = yes
+		}
+		GER = { 
+		    add_threat = 25
+		    transfer_state = 98
+			transfer_state = 87
+			transfer_state = 10
+			add_state_core = 98
+			add_state_core = 87
+			add_state_core = 10
+			end_puppet = NPR
+			end_puppet = POL
+		}
+		LEA = { 
+		    remove_state_core = 10
+		}
+		NPR = { 
+		    remove_state_core = 90
+			remove_state_core = 87
+			remove_state_core = 794
+		}
+	}
+}
+###################
+#BERLIN CONFERENCE#
+###################
+
+#MAKE OUR DEMANDS
+country_event = { 
+	id = wk_ger.2
+	title = wk_ger.2.t
+	desc = wk_ger.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = wk_ger.2.a
+	    GER = {
+		    add_state_claim = 547
+			add_state_claim = 770
+			add_state_claim = 791
+			add_state_claim = 792
+		}
+		ENG = {
+		    country_event = {
+                id = wk_ger.3
+                days = 7
+            }
+		}
+	}
+}
+
+#ENGLAND'S BEEN ASKED ABOUT CONFERENCE
+country_event = { 
+	id = wk_ger.3
+	title = wk_ger.3.t
+	desc = wk_ger.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = wk_ger.3.a
+	    ai_chance = { #Accepts
+			base = 100
+			modifier = {
+				add = 20
+				is_in_faction_with = GER
+			}
+		}
+		GER = {
+            country_event = {
+                id = wk_ger.4
+                days = 7
+            }
+        }
+	}
+	
+	option = { #Refuses
+	name = wk_ger.3.b
+	    ai_chance = {
+			base = 0
+		}
+		GER = {
+            country_event = {
+                id = wk_ger.5
+                days = 7
+            }
+        }			
+	}
+}
+
+#ENGLAND ACCEPTS
+country_event = { 
+	id = wk_ger.4
+	title = wk_ger.4.t
+	desc = wk_ger.4.d
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = wk_ger.4.a
+        GER = {
+		transfer_state = 547
+		transfer_state = 770
+		transfer_state = 791
+		transfer_state = 792
+		add_timed_idea = { idea = agreement_germany  days = 180 }
+		add_opinion_modifier = { target = ENG modifier = medium_increase }
+		}
+		ENG = {
+		transfer_state = 776
+		transfer_state = 777
+		transfer_state = 798
+		transfer_state = 813
+		add_timed_idea = { idea = agreement_england  days = 180 }
+		add_opinion_modifier = { target = GER modifier = medium_increase }
+		}
+	}
+}
+
+#ENGLAND REFUSES
+country_event = { 
+	id = wk_ger.5
+	title = wk_ger.5.t
+	desc = wk_ger.5.d
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = wk_ger.5.a
+        GER = {
+		add_opinion_modifier = { target = ENG modifier = medium_decrease }
+		}
+		ENG = {
+		add_opinion_modifier = { target = GER modifier = medium_decrease }
+		}	
+	}
+}
+
+##########################
+###ANSCHLUSS LUXEMBURGS###
+##########################
+
+
+#LUXEMBOURS'S BEEN ASKED ABOUT ANSCHLUSS
+country_event = { 
+	id = wk_ger.6
+	title = wk_ger.6.t
+	desc = wk_ger.6.d
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+	    name = wk_ger.6.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				GER = { has_army_size = { size < 60 } }
+			}
+			modifier = {
+				add = 100
+				GER = { has_army_size = { size > 60 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = GER
+			}
+		}
+		GER = {
+			country_event = { hours = 2 id = wk_ger.7 }
+		}
+	}
+	
+	option = { #Refuse
+	name = wk_ger.6.b
+		ai_chance = {
+			base = 10
+		}
+		GER = {
+			country_event = { hours = 2 id = wk_ger.8 }
+		}
+	}
+}
+
+#LUXEMBOURG ACCEPTS
+country_event = { 
+	id = wk_ger.7
+	title = wk_ger.7.t
+	desc = wk_ger.7.d
+	
+	is_triggered_only = yes
+	
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 10 name = wk_ger.7.t }
+ 		} 		
+ 	}
+	
+	option = { 
+	    name = wk_ger.7.a
+		8 = {
+			if = {
+				limit = { is_owned_by = LUX }
+				add_core_of = GER
+			}
+		}
+		LUX = {
+			every_unit_leader = {
+				set_nationality = GER
+			}
+		}
+		annex_country = { target = LUX transfer_troops = yes }
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+	}
+}
+
+#LUXEMBOURG REFUSES
+country_event = { 
+	id = wk_ger.8
+	title = wk_ger.8.t
+	desc = wk_ger.8.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.8.a
+		add_state_claim = 8
+		create_wargoal = {
+			type = take_state_focus
+			target = LUX
+			generator = { 4 152 153 }
+		}
+	}
+}
+
+###################
+###OIL AGREEMENT###
+###################
+
+country_event = { 
+	id = wk_ger.9
+	title = wk_ger.9.t
+	desc = wk_ger.9.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.9.a
+		59 = {
+			add_resource = {
+				type = oil
+				amount = 20
+			}
+		}
+		291 = {
+			destroy_resource = {
+				type = oil
+				amount = 20
+			}
+		}
+		GER = {
+			add_ideas = { ger_oil_agreement }
+		}
+		GER = {
+			add_ideas = { otm_oil_agreement }
+		}
+	}
+}
+
+########################
+###OPERATION SCHWARZE###
+########################
+
+country_event = { 
+	id = wk_ger.10
+	title = wk_ger.10.t
+	desc = wk_ger.10.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.10.a
+		OTM = { end_puppet = CRI }
+		GER = { puppet = CRI }
+		UKN = {
+			transfer_state = 196
+			add_state_core = 196
+		}
+	}
+}
+
+################################
+###SUBJUGATE BALTIC COUNTRIES###
+################################
+
+#BALTIC COUNTRIES'S BEEN ASKED 
+country_event = { 
+	id = wk_ger.11
+	title = wk_ger.11.t
+	desc = wk_ger.11.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.11.a
+		ai_chance = {
+			base = 30
+		}
+		GER = {
+			country_event = { hours = 2 id = wk_ger.12 }
+		}		
+ 	}
+	
+	option = {
+		name = germany.11.b
+		ai_chance = {
+			base = 70
+		}
+		GER = {
+			country_event = { hours = 2 id = wk_ger.13 }
+		}
+	}
+}
+
+#BALTIC ACCEPTS
+country_event = { 
+	id = wk_ger.12
+	title = wk_ger.12.t
+	desc = wk_ger.12.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.12.a
+		GER = { 
+			puppet = LIT
+			puppet = UBD
+			puppet = WIL
+		}
+ 		add_named_threat = { threat = 10 name = wk_ger.11.t } 		
+ 	}
+}
+
+#BALTIC REFUSES
+country_event = { 
+	id = wk_ger.13
+	title = wk_ger.13.t
+	desc = wk_ger.13.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.13.a
+		UBD = {
+			create_faction = BALTIC_LEAGUE
+	    }
+		UBD = { 
+			add_to_faction = LIT
+			add_to_faction = WIL
+		}
+		GER = { create_wargoal = { type = puppet_wargoal_focus target = LIT } }
+		GER = { create_wargoal = { type = puppet_wargoal_focus target = UBD } }
+		GER = { create_wargoal = { type = puppet_wargoal_focus target = WIL } }
+	}
+}
+
+################################
+###DER VOLKERBUND DISBANDMENT###
+################################
+
+country_event = { 
+	id = wk_ger.14
+	title = wk_ger.14.t
+	desc = wk_ger.14.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.14.a
+		10 = {
+			if = {
+				limit = { is_owned_by = LEA }
+				add_core_of = POL
+				POL = { transfer_state = 10 }
+			}
+		}
+		809 = {
+			if = {
+				limit = { is_owned_by = LEA }
+				add_core_of = UBD
+				UBD = { transfer_state = 809 }
+			}
+		}
+		810 = {
+			if = {
+				limit = { is_owned_by = LEA }
+				add_core_of = UKN
+				UKN = { transfer_state = 810 }
+			}
+		}
+		811 = {
+			if = {
+				limit = { is_owned_by = LEA }
+				add_core_of = FRA
+				FRA = { transfer_state = 811 }
+			}
+		}
+ 	}
+}

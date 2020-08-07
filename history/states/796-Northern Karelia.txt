@@ -1,0 +1,21 @@
+state={
+	id=796
+	name="STATE_796"
+	
+	state_category = rural
+	
+	history={
+		owner = RSE
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = RSE
+		add_core_of = SOV
+	}	
+	
+	provinces={
+		15 74 142 3121 6117 9039 9123 9162 9203 11128 11183 
+	}
+	manpower= 40500
+	buildings_max_level_factor=1.000
+}

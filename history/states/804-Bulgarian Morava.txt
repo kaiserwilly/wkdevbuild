@@ -1,0 +1,20 @@
+state={
+	id=804
+	name="STATE_804"
+	
+	state_category=rural
+	
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = YUG
+	}
+	
+	provinces={
+		11832 11857 11868 
+	}
+	manpower= 90500
+	buildings_max_level_factor=1.000
+}

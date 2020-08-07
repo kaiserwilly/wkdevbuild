@@ -1,0 +1,31 @@
+state={
+	id=805
+	name="STATE_805"
+	
+	state_category=town
+	
+	history={
+		add_core_of = CAM
+		owner = FRA
+		victory_points = {
+			4401 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+			4401 = {
+				naval_base = 4
+
+			}
+
+		}
+
+	}
+	
+	provinces={
+		1396 1423 4223 4284 4341 4401 7303 7331 10232 10261 12133 12204 12232 
+	}
+	manpower=2500250
+	buildings_max_level_factor=1.000
+}

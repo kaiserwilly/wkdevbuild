@@ -1,0 +1,21 @@
+state={
+	id=800
+	name="STATE_800"
+	
+	state_category = rural
+	
+	history={
+		owner = AUH
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = AUH
+	}	
+	
+	provinces={
+		953 9894 11845 11872 
+	}
+	manpower= 320500
+	buildings_max_level_factor=1.000
+}

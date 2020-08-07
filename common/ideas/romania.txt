@@ -1,0 +1,852 @@
+ideas = {
+    country = {
+        brothers_from_a_diferent_mother = {
+			allowed = {
+				always = no
+                                original_tag= ROM
+			}
+
+			allowed_civil_war = {
+				always = yes			
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                army_core_attack_factor = 0.2
+                army_core_defence_factor = 0.2
+			}
+
+		}
+		ROM_revanchism = {
+	
+		allowed = {
+			original_tag = ROM
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_intel_bonus
+		
+		modifier = {		
+			
+			generate_wargoal_tension = -1
+			war_support_factor = 0.05
+		}
+	}
+		
+		capitalism = {
+			allowed = {
+				always = no
+                original_tag= ROM
+			}
+
+			allowed_civil_war = {
+				always = yes			
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                production_speed_buildings_factor = 0.1      
+			}
+
+		}
+		
+		raised_minnimum_wage = {
+			allowed = {
+				always = no
+                original_tag= ROM
+			}
+
+			allowed_civil_war = {
+				always = yes			
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                industrial_capacity_factory = 0.3    
+                consumer_goods_factor = 0.05			   
+			}
+
+		}
+		
+        outdated_political_system = {
+			allowed = {
+				always = no
+                original_tag= ROM
+			}
+
+			allowed_civil_war = {
+				always = yes			
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                industrial_capacity_factory = -0.4
+				
+				consumer_goods_factor = 0.05
+			}
+
+		}
+		carols_lifestyle = {
+			allowed = {
+				always = no
+                original_tag= ROM
+			}
+
+			allowed_civil_war = {
+				always = yes			
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.8
+			}
+
+		}
+        
+		army_corruption = {
+            allowed = {
+				always = no
+                original_tag= ROM
+			}
+
+			allowed_civil_war = {
+				always = yes			
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                   army_attack_factor = -0.3
+                   army_speed_factor = -0.3
+                   army_defence_factor = -0.3
+			}
+
+		}
+
+        anti_monarchist_propaganda = {
+			allowed = {
+				always = no
+                original_tag= ROM
+			}
+
+			allowed_civil_war = {
+				always = yes			
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                   monarchism_drift = -0.5
+			}
+
+		}
+
+        retaking_our_rightful_land = {
+			allowed = {
+				always = no
+                original_tag= ROM
+			}
+
+			allowed_civil_war = {
+				always = yes			
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                justify_war_goal_time = -0.5
+			}
+
+		}	
+    }
+	political_advisor = {
+
+		ROM_iuliu_maniu = {
+
+			picture = generic_democratic_reformer_western_european_2d
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
+			traits = { democratic_reformer }
+		}
+
+		ROM_gheorghe_gheorghiu_dej = {
+
+			picture = generic_communist_revolutionary_western_european_2d
+
+			available = {
+				
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			traits = { communist_revolutionary }
+		}
+
+		ROM_gheorghe_argeseanu = {
+
+			picture = generic_army_europe_4
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		ROM_nicolae_malaxa = {
+
+			picture = idea_nicolae_malaxa
+
+			allowed = {
+				original_tag = ROM
+				has_dlc = "Death or Dishonor"
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		ROM_armand_calinescu = {
+
+			picture = generic_army_europe_5
+				
+			allowed = {
+				original_tag = ROM
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		ROM_petru_groza = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			traits = { backroom_backstabber }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		ROM_mihail_sturdza = {
+
+			picture = generic_fascist_demagogue_western_european_2d
+
+			available = {
+				if = {
+					
+					
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}			
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			traits = { fascist_demagogue }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	theorist = {
+
+		ROM_gheorghe_potopeanu = {
+			ledger = army
+					
+					
+			allowed = {
+				original_tag = ROM
+			}
+			
+			picture = generic_army_europe_2
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+
+		ROM_emanoil_ionescu = {
+			ledger = air
+					
+					
+			allowed = {
+				original_tag = ROM
+			}
+			
+			picture = generic_air_europe_1
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+	# MILITARY
+	army_chief = {
+
+		ROM_constantin_sanatescu = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ROM_ion_antonescu = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		ROM_ermil_gheorghiu = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ROM_gheorghe_jienescu = {
+			
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		ROM_nicolae_sova = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ROM_horia_macellariu = {
+			
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		ROM_gheorghe_avramescu = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			picture = generic_army_europe_2
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ROM_gheorghe_mihail = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			picture = generic_army_europe_3
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ROM_paul_teodorescu = {
+			ledger = air
+			
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			picture = generic_air_europe_3
+			
+			traits = { air_strategic_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ROM_gheorghe_vasiliu = {
+			ledger = air
+			
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			picture = generic_air_europe_1
+			
+			traits = { air_airborne_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+
+		ROM_leonidas_works = {
+			
+			picture = generic_tank_manufacturer_3
+
+			cost = 150
+
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			research_bonus = {
+				armor = 0.05
+			}
+			
+			traits = { tank_manufacturer }
+
+			equipment_bonus = {
+				light_tank_destroyer_equipment = {
+					reliability = 0.2
+					hard_attack = 0.05
+					ap_attack = 0.05
+				}
+				medium_tank_destroyer_equipment = {
+					reliability = 0.2
+					hard_attack = 0.05
+					ap_attack = 0.05
+				}
+				heavy_tank_destroyer_equipment = {
+					reliability = 0.2
+					hard_attack = 0.05
+					ap_attack = 0.05
+				}				
+			}
+			
+			modifier = {
+				equipment_conversion_speed = 0.1
+			}
+		}
+	}
+
+	industrial_concern = {
+		
+		
+		ROM_ROMLOC = {
+		
+			picture = industrial_concern_1
+			
+			allowed = {
+				original_tag = ROM
+				has_dlc = "Death or Dishonor"
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			
+			traits = { industrial_concern }
+		}
+
+				
+	}
+
+	naval_manufacturer = { 			
+		
+		designer = yes
+		
+		constanta_shipyard = {
+			
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				# cant find enough info 
+			}
+			
+			traits = { naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		ROM_coastal_defense_navy_designer = {
+			
+			picture = generic_coastal_navy
+
+			cost = 75
+
+			allowed = {
+				original_tag = ROM
+			}
+
+			available = {
+				has_completed_focus = ROM_coastal_defense_navy
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				ship_hull_light = {
+					lg_attack = 0.1
+					naval_range = -0.5
+					build_cost_ic = -0.20
+				}
+				ship_hull_cruiser = {
+					lg_attack = 0.1
+					naval_range = -0.5
+					build_cost_ic = -0.20
+				}
+			}
+			
+			traits = { naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		ROM_black_sea_dominance_designer = {
+			
+			picture = generic_sea_focused_navy
+
+			cost = 75
+
+			allowed = {		
+				original_tag = ROM
+			}
+
+			available = {
+				has_completed_focus = ROM_black_sea_dominance
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					hg_attack = 0.2
+					naval_range = -0.5
+					armor_value = 0.2
+				}
+				ship_hull_heavy = {
+					hg_attack = 0.2
+					naval_range = -0.5
+					armor_value = 0.2
+				}
+			}
+			
+			traits = { naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		
+		
+
+		ROM_malaxa = {
+			
+			picture = generic_motorized_equipment_manufacturer_1
+
+
+			allowed = {
+				original_TAG = ROM
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+		}
+
+		ROM_cugir = {
+			
+			picture = idea_ROM_cugir #used with permission from Turning Point mod
+
+
+			allowed = {
+				original_TAG = ROM
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+		}
+
+		ROM_resita = {
+			
+			picture = generic_artillery_manufacturer_1
+
+
+			allowed = {
+				original_TAG = ROM
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+		}
+	
+	}
+	
+	aircraft_manufacturer = { 		
+			
+		designer = yes
+		
+		
+
+		ROM_iar = {
+			
+			picture = generic_air_manufacturer_2
+
+			available = {
+				if = {
+					
+					
+				}
+			}
+
+			cost = 150
+
+			allowed = {
+				original_tag = ROM
+				has_dlc = "Death or Dishonor"
+			}
+			
+			research_bonus = {
+				air_equipment = 0.05
+			}			
+			
+			equipment_bonus = {
+				# produced the IAR-80 fighter/ground attack aircraft around 350 of them during 36-44
+				fighter_equipment = {
+					air_attack = 0.1
+				}
+				cv_fighter_equipment = {
+					air_attack = 0.1
+				}
+				CAS_equipment = {
+					air_ground_attack = 0.1
+				}
+				cv_CAS_equipment = {
+					air_ground_attack = 0.1
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ROM_ICAR = {
+			
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				original_tag = ROM
+				has_dlc = "Death or Dishonor"
+			}
+			
+			research_bonus = {
+				air_equipment = 0.1
+			}			
+			
+			equipment_bonus = {
+				
+				fighter_equipment = {
+					air_agility = 0.15
+				}
+				cv_fighter_equipment = {
+					air_agility = 0.15
+				}
+				heavy_fighter_equipment = {
+					air_agility = 0.15
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ROM_SET = {
+			
+			picture = generic_air_manufacturer_2
+
+			allowed = {
+				original_tag = ROM
+				has_dlc = "Death or Dishonor"
+			}
+			
+			research_bonus = {
+				air_equipment = 0.1
+			}			
+			
+			equipment_bonus = {
+				
+				tac_bomber_equipment = {
+					air_ground_attack = 0.1
+					build_cost_ic = -0.1
+				}
+				nav_bomber_equipment = {
+					naval_strike_attack = 0.1
+					build_cost_ic = -0.1
+				}
+				cv_nav_bomber_equipment = {
+					naval_strike_attack = 0.1
+					build_cost_ic = -0.1
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+}

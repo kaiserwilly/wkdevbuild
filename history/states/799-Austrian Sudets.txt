@@ -1,0 +1,32 @@
+state={
+	id=799
+	name="STATE_799"
+	
+	state_category = town
+		
+	history= {
+		victory_points = {
+			3585 3
+		}
+		#victory_points = {
+		#	11432 1
+		#}
+		victory_points = {
+			11401 3
+		}
+		owner = AUH
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 1
+			anti_air_building = 1
+		}
+		add_core_of = AUH
+        add_core_of = AUS		
+	}
+	
+	provinces= {
+		543 557 5283 7857 11525 
+	}
+	manpower= 350000
+	buildings_max_level_factor=1.000
+}

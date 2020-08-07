@@ -1,0 +1,27 @@
+state={
+	id=792
+	name="STATE_792"
+	
+	state_category = rural
+	
+	history={
+		owner = BEL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+		}
+		victory_points = {
+			191 1 
+		}
+		add_core_of = COG
+
+		add_claim_by = GCG
+	}
+	
+	
+	provinces={
+		191 1817 4515 12907 
+	}
+	manpower=750000
+	buildings_max_level_factor=1.000
+}

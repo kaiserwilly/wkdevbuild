@@ -1,0 +1,16 @@
+state={
+	id=794
+	name="STATE_794"
+	
+	state_category = town
+	
+	history= {
+	    owner = NPR
+		add_core_of = NPR
+    }
+	provinces={
+		467 3482 6511 
+	}
+	manpower= 1200500
+	buildings_max_level_factor=1.000
+}

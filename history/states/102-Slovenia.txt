@@ -1,0 +1,19 @@
+state=
+{
+	id=102
+	name="STATE_102"
+	manpower = 500000
+	
+	state_category = town
+	
+	history = {
+		owner = AUH
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = AUH
+		add_core_of = SLV
+	}
+	provinces={
+		596 665 3654 6672 9596 11612 }
+	}

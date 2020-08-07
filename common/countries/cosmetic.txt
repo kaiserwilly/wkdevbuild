@@ -1,0 +1,5 @@
+
+GER_hre = {
+	color = rgb { 204 204 0 }
+	color_ui = rgb { 255 128 0 }
+}

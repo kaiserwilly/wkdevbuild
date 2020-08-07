@@ -1,0 +1,66 @@
+ideas = {
+    
+	country = {    
+		multinational_state = {
+
+			allowed = {
+				original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {  
+			    stability_factor=-0.10 
+			}
+		}
+		
+		habsburg = {
+			
+			allowed = {
+				original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor = 0.1	
+			}
+		}
+		
+		AUH_victors_of_ww1 = {
+
+			allowed = {
+				original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			picture = generic_victors_of_ww1
+
+			removal_cost = -1
+			
+			research_bonus = {
+				land_doctrine = -0.75
+			}
+
+			modifier = {
+				conscription = -0.003
+				war_support_factor = -0.05
+			}
+		}
+    }
+}

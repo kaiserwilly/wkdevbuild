@@ -1,0 +1,85 @@
+spriteTypes = {	
+
+##########WELTKRIEG##########
+ 	
+	SpriteType = { 
+		name = "GFX_berlin_conference"
+		texturefile = "gfx/interface/goals/berlin_conference.dds"
+	} 
+	SpriteType = { 
+		name = "GFX_warsaw_congress"
+		texturefile = "gfx/interface/goals/warsaw_congress.dds"
+	}
+    SpriteType = { 
+		name = "monarchism"
+		texturefile = "gfx/interface/goals/ideologies/monarchism.dds"
+	}
+	SpriteType = { 
+		name = "GFX_former_territories"
+		texturefile = "gfx/interface/goals/former_territories.dds"
+	}
+	SpriteType = { 
+		name = "GFX_austrian_situation"
+		texturefile = "gfx/interface/goals/austrian_situation.dds"
+	}
+	SpriteType = { 
+		name = "GFX_habsburgs"
+		texturefile = "gfx/interface/goals/habsburgs.dds"
+	}
+	SpriteType = { 
+		name = "GFX_hungarians"
+		texturefile = "gfx/interface/goals/hungarians.dds"
+	}
+	SpriteType = { 
+		name = "GFX_holy_roman"
+		texturefile = "gfx/interface/goals/holy_roman.dds"
+	}
+	SpriteType = { 
+		name = "GFX_romanovs"
+		texturefile = "gfx/interface/goals/romanovs.dds"
+	}
+	SpriteType = { 
+		name = "GFX_bolsheviks"
+		texturefile = "gfx/interface/goals/bolsheviks.dds"
+	}
+	SpriteType = { 
+		name = "GFX_swiss_partition"
+		texturefile = "gfx/interface/goals/swiss_partition.dds"
+	}
+	SpriteType = { 
+		name = "GFX_colonial_government"
+		texturefile = "gfx/interface/goals/colonial_government.dds"
+	}
+	SpriteType = { 
+		name = "GFX_morocco_is_spain"
+		texturefile = "gfx/interface/goals/moroccospain.dds"
+	}
+	SpriteType = { 
+		name = "GFX_restauration_of_austria_hungary"
+		texturefile = "gfx/interface/goals/restauration_of_austria_hungary.dds"
+	}
+	SpriteType = { 
+		name = "GFX_pax_germanica"
+		texturefile = "gfx/interface/goals/pax_germanica.dds"
+	}
+	SpriteType = { 
+		name = "GFX_fate_austria"
+		texturefile = "gfx/interface/goals/fate_austria.dds"
+	}
+	SpriteType = { 
+		name = "GFX_intervene_war"
+		texturefile = "gfx/interface/goals/intervene_war.dds"
+	}
+	SpriteType = { 
+		name = "GFX_anschluss_luxemburgs"
+		texturefile = "gfx/interface/goals/anschluss_luxemburgs.dds"
+	}
+	SpriteType = { 
+		name = "GFX_invite_spain"
+		texturefile = "gfx/interface/goals/invite_spain.dds"
+	}
+	SpriteType = { 
+		name = "GFX_invite_portugal"
+		texturefile = "gfx/interface/goals/invite_portugal.dds"
+	}
+}

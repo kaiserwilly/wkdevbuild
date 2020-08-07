@@ -1,0 +1,26 @@
+state={
+	id=790
+	name="STATE_790"
+	
+	state_category = city
+	
+	history={
+		owner = GER
+		victory_points = {
+			11516 5 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 5
+		}
+		add_core_of = GER
+	}
+	
+	provinces={
+		521 11516 
+	}
+	manpower= 430000
+	buildings_max_level_factor=1.000
+}

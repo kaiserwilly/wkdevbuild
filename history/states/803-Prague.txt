@@ -1,0 +1,22 @@
+state={
+	id=803
+	name="STATE_803"
+	
+	state_category = large_city
+	
+	history={
+		owner = AUH
+		victory_points = { 11542 30 }
+		buildings = {
+			infrastructure = 8
+		}
+		add_core_of = AUH
+		add_core_of = CZE
+	}
+	
+	provinces={
+		11542 
+	}
+	manpower= 1000000
+	buildings_max_level_factor=1.000
+}

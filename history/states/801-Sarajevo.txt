@@ -1,0 +1,24 @@
+state={
+	id=801
+	name="STATE_801"
+	
+	state_category = town
+	
+	history={
+		owner = AUH
+		victory_points = {
+			11899 10 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = AUH
+	}	
+	
+	provinces={
+		982 11741 11899 
+	}
+	manpower= 890200
+	buildings_max_level_factor=1.000
+}

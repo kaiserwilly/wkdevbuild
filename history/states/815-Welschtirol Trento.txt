@@ -1,0 +1,23 @@
+state={
+	id=815
+	name="STATE_815"
+	
+	state_category = town
+	
+	history={
+		owner = AUH
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		add_core_of = AUH
+		add_core_of = TRE
+	}
+	
+	provinces={
+		6631 9598 
+	}
+	
+	manpower= 320500
+	buildings_max_level_factor=1.000
+}
