@@ -1,3 +1,4 @@
+
 ideas = {
 
 	country = {
@@ -82,34 +83,78 @@ ideas = {
 		}
 	}
 	
-	hight_command = { 
+	army_chief = {
+		
 		lavr_kornilov = {
-			ledger = army
-
 			
 			allowed = {
 				original_tag = RSE
 			}
 			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 8
-			}
+			traits = { army_chief_offensive_2 }
 		}
-	    sergey_markov = {
-			ledger = army
 
+		nikolai_yudenich = {
 			
 			allowed = {
 				original_tag = RSE
 			}
 			
-			traits = { army_armored_2 }
+			traits = { army_chief_defensive_2 }
+		}
+	}
+	navy_chief = {		
+
+		alexandr_kolchak = {
 			
-			ai_will_do = {
-				factor = 8
+			allowed = {
+				original_tag = RSE
 			}
+			
+			traits = { navy_chief_decisive_battle_3 }
+		}
+	}
+	high_command = {
+
+		anton_denikin = {
+			ledger = army
+			
+			allowed = {
+				original_tag = RSE
+			}
+			
+			traits = { army_artillery_3 }			
+		}
+		
+		peter_wrangel = {
+			ledger = army
+
+			allowed = {
+				original_tag = RSE
+			}
+			
+			traits = { army_regrouping_1 }			
+		}
+
+		vladimir_kappel = {
+			ledger = army
+
+			allowed = {
+				original_tag = RSE
+			}
+			
+			traits = { army_armored_2 }			
+		}
+
+		peter_nesterov = {
+			ledger = air
+
+			allowed = {
+				original_tag = RSE
+			}
+			
+			traits = { air_chief_old_guard }			
 		}
 	}
 }
+
