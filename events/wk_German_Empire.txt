@@ -356,23 +356,10 @@ country_event = {
 	
 	option = {
 		name = germany.9.a
-		59 = {
-			add_resource = {
-				type = oil
-				amount = 20
-			}
-		}
-		291 = {
-			destroy_resource = {
-				type = oil
-				amount = 20
-			}
-		}
-		GER = {
-			add_ideas = { ger_oil_agreement }
-		}
-		GER = {
-			add_ideas = { otm_oil_agreement }
+		create_import = {
+			resource = oil
+			amount = 30
+			exporter = OTM
 		}
 	}
 }

@@ -471,10 +471,6 @@ CSA = {
 	color = rgb { 145 163 176  }
 	color_ui = rgb { 186 205 219 }
 }
-EPS = {
-	color = rgb { 128 128 128 }
-	color_ui = rgb { 255 73 121 }
-}
 GCG = {
 	color = rgb { 128 128 128 }
 	color_ui = rgb { 255 73 121 }
@@ -585,6 +581,10 @@ TFR = {
 }
 TFE = {
 	color = { 0  3  120 }
+	color_ui = rgb { 255 73 121 }
+}
+CHI = {
+	color = { 0 128 255 }
 	color_ui = rgb { 255 73 121 }
 }
 D01 = {
