@@ -1,0 +1,115 @@
+ideas = {
+
+	country = {
+		russian_economic_collapsed = {
+			
+			allowed = {
+				original_tag = RSE
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_man_five_year_plan_industry
+
+			removal_cost = -1
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = 0.50	
+				consumer_goods_factor = 0.20
+				research_speed_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		for_the_motherland = {
+			
+			allowed = {
+				original_tag = RSE
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.5
+				war_support_factor = 0.2
+				stability_factor = -0.1
+			}
+		}
+		russian_stavka = {
+			
+			allowed = {
+				original_tag = RSE
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = generic_manpower_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		russian_fleet_drowned = {
+			
+			allowed = {
+				original_tag = RSE
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_navy_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+	}
+	
+	hight_command = { 
+		lavr_kornilov = {
+			ledger = army
+
+			
+			allowed = {
+				original_tag = RSE
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 8
+			}
+		}
+	    sergey_markov = {
+			ledger = army
+
+			
+			allowed = {
+				original_tag = RSE
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 8
+			}
+		}
+	}
+}
