@@ -305,7 +305,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		    add_ideas = ROM_retaking_our_rightful_land
+		    add_ideas = retaking_our_rightful_land
             declare_war_on = { type = annex_everything    target = BES }
 		} 
                   
