@@ -9,6 +9,7 @@ state={
 
 		}
 		add_core_of = RSE
+		add_core_of = SOV
 
 	}
 

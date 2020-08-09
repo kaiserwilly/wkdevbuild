@@ -82,4 +82,12 @@ spriteTypes = {
 		name = "GFX_invite_portugal"
 		texturefile = "gfx/interface/goals/invite_portugal.dds"
 	}
+	SpriteType = { 
+		name = "GFX_demand_transylvania"
+		texturefile = "gfx/interface/goals/demand_transylvania.dds"
+	}
+	SpriteType = { 
+		name = "GFX_retaking_our_rightful_land"
+		texturefile = "gfx/interface/goals/retaking_our_rightful_land.dds"
+	}
 }

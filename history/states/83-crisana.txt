@@ -18,6 +18,7 @@ state={
 		}
 		add_core_of = AUH
 		add_core_of = TNS
+		add_core_of = ROM
 	}
 
 	provinces={

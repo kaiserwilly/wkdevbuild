@@ -103,8 +103,8 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { #let them come
-		name = Romania.3.a
-     AUH = { create_wargoal = { type = puppet_wargoal_focus target = ROM } }
+		name = Romania.4.a
+     AUH = { declare_war_on = { target = ROM   type = puppet_wargoal_focus } }
 	}
 	
 
