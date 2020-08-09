@@ -132,6 +132,8 @@
  FRA_middle_east_desc:0 "idk"
  
  #Romanian Focus tree
+ ROM_nationalise_businesses:0 "Nationalise Businesses"
+ ROM_nationalise_businesses_desc:0 "Nationalise Businesses"
  ROM_create_a_fair_constitution:0 "Create a Fair Constitution"
  ROM_create_a_fair_constitution_desc:0 "a"
  ROM_root_out_corruption:0 "Root out Corruption"
