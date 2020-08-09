@@ -16,4 +16,20 @@ spriteTypes = {
 		name = "GFX_idea_multinational_state"
 		texturefile = "gfx/interface/ideas/multinational_state.dds"
 	}
+	spriteType = { 
+		name = "GFX_idea_for_the_motherland"
+		texturefile = "gfx/interface/ideas/for_the_motherland.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_for_the_proletariat"
+		texturefile = "gfx/interface/ideas/for_the_proletariat.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_russian_economic_collapsed"
+		texturefile = "gfx/interface/ideas/russian_economic_collapsed.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_home_of_the_revolution"
+		texturefile = "gfx/interface/ideas/home_of_the_revolution.dds"
+	}
 }

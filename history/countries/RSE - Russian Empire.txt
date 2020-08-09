@@ -1,6 +1,6 @@
 ﻿capital = 653
 
-oob = "RSE_1937"
+oob = "RSE_1936"
 
 set_fuel_ratio = 0.8
 
@@ -63,15 +63,31 @@ set_popularities = {
 }
 
 add_ideas = {
+for_the_motherland
+russian_economic_collapsed
+russian_fleet_drowned
+russian_stavka
+partial_economic_mobilisation
+limited_exports
 }
 
 create_country_leader = {
 	name = "Tsar Michael I"
-	desc = "POLITICS_ADOLF_HITLER_DESC"
+	desc = "POLITICS_MICHAEL_ROMANOV_DESC"
 	picture = "Tsar_Michael.dds"
 	expire = "1965.1.1"
 	ideology = constitutional_monarchy
 	traits = {
-		dictator
+		inexperienced_imperialist
+	}
+}
+
+create_country_leader = {
+	name = "Viktor Chernov"
+	desc = "POLITICS_VIKTOR_CHERNOV_DESC"
+	picture = "Viktor_Chernov.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
 	}
 }

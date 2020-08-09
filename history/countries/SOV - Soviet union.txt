@@ -48,8 +48,11 @@ set_popularities = {
 }
 
 add_ideas = {
-	trotskyite_plot
-	home_of_revolution
+	home_of_the_revolution
+	russian_economic_collapsed
+	for_the_proletariat
+	war_economy
+	closed_economy
 }
 
 create_country_leader = {
@@ -59,6 +62,7 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = trotskism
 	traits = {	
+	    triumphant_revolutionary
 	}
 }
 

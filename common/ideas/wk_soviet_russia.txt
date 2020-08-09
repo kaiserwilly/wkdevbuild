@@ -1,0 +1,67 @@
+ideas = {
+
+	country = {
+		russian_economic_collapsed = {
+			
+			allowed = {
+				original_tag = SOV
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_victors_of_ww1
+
+			removal_cost = -1
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = 0.50	
+				consumer_goods_factor = 0.20
+				research_speed_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		home_of_the_revolution = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				army_core_attack_factor = 0.1
+				ai_focus_aggressive_factor = 2.0
+				stability_factor = -0.05
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		for_the_proletariat = {
+			
+			allowed = {
+				original_tag = SOV
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.5
+				war_support_factor = 0.2
+				stability_factor = -0.1
+			}
+		}
+	}
+}
