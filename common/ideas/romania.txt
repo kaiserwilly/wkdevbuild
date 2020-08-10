@@ -610,7 +610,6 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = ROM_coastal_defense_navy
 			}
 			
 			research_bonus = {
@@ -647,7 +646,6 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = ROM_black_sea_dominance
 			}
 			
 			research_bonus = {

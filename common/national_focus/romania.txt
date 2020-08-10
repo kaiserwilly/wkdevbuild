@@ -196,6 +196,26 @@ focus = {
 }
 
 focus = {
+		id = ROM_revanchism
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = ROM_raise_the_minnimum_wage }
+		x = 0
+		y = 1
+		relative_position_id = ROM_raise_the_minnimum_wage
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_ideas = ROM_revanchism
+		}
+}
+
+focus = {
 		id = ROM_pentru_tara
 		icon = GFX_goal_rhineland
 		prerequisite = { focus = ROM_depose_carol
@@ -360,26 +380,6 @@ focus = {
 	completion_reward = {
 		add_ideas = raised_minnimum_wage
 	}
-}
-
-focus = {
-		id = ROM_revanchism
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = ROM_raise_the_minnimum_wage }
-		x = 0
-		y = 1
-		relative_position_id = ROM_raise_the_minnimum_wage
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		    add_ideas = ROM_revanchism
-		}
 }
 
 ##############################################
@@ -1334,11 +1334,10 @@ focus = {
 			is_in_faction = yes
 			any_other_country = {
 				is_in_faction_with = ROOT
-				any_state = {
-				is_coastal = yes
-				is_controlled_by = PREV
-			}
-				
+				any_owned_state = {
+					is_coastal = yes
+					is_controlled_by = PREV
+			    }
 			}
 		}
 		
