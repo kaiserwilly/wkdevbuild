@@ -2,7 +2,7 @@
 state={
 	id=184
 	name="STATE_184"
-	manpower = 382500
+	manpower = 182500
 	
 	state_category = rural
 	
@@ -11,14 +11,14 @@ state={
 	}
 
 	history={
-		owner = BUL
+		owner = GRE
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = BUL
+		add_core_of = GRE
 	}
 
 	provinces={
-		936 3526 6990 9791 9837 9930 10163 11774
+		936 3526 9837 10163
 	}
 }

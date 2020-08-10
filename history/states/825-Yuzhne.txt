@@ -1,0 +1,20 @@
+state={
+	id=825
+	name="STATE_825"
+	
+	state_category = rural
+	
+	history={
+		owner = UKN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = UKN
+	}
+	
+	provinces={
+		754 3575 3757 9714 11703 
+	}
+	manpower= 170500
+	buildings_max_level_factor=1.000
+}
