@@ -1,7 +1,5 @@
 ﻿capital = 64
 
-oob = "GAL_1937"
-
 set_fuel_ratio = 0.8
 
 # Starting tech
@@ -58,5 +56,15 @@ set_popularities = {
 }
 
 add_ideas = {
+}
+
+create_country_leader = {
+	name = "Kaiser Karl I"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Kaiser Karl.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarchy
+	traits = {
+	}
 }
 

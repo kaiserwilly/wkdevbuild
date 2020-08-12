@@ -33,3 +33,14 @@ set_popularities = {
 	communism = 2
 	monarchism = 78
 }
+
+create_country_leader = {
+	name = "Wilhelm II von Hohenzollern"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Kaiser Wilhelm II.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarchy
+	traits = {
+		dictator
+	}
+}

@@ -66,6 +66,17 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Tsar Michael I"
+	desc = "POLITICS_MICHAEL_ROMANOV_DESC"
+	picture = "Tsar_Michael.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarchy
+	traits = {
+		inexperienced_imperialist
+	}
+}
+
 #RUSSIAN CIVIL WAR
 if = {
     limit = {

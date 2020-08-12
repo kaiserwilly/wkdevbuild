@@ -49,6 +49,8 @@ set_convoys = 350
 set_stability = 0.75 
 set_war_support = 0.3
 
+puppet = FIN
+
 set_politics = {
 	ruling_party = monarchism
 	last_election = "1933.3.5"

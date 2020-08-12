@@ -33,3 +33,13 @@ set_popularities = {
 	communism = 2
 	monarchism = 78
 }
+
+create_country_leader = {
+	name = "Kaiser Karl I"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Kaiser Karl.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarchy
+	traits = {
+	}
+}

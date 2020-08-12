@@ -2,22 +2,23 @@ state={
 	id=813
 	name="STATE_813"
 	
-	state_category = pastoral
-	resources={
-		rubber=3 # was: 4
-	}
+	state_category = rural
+	
 	history={
-		owner = GER
-		add_core_of = CAR
+		owner = ENG
 		buildings = {
 			infrastructure = 2
-		}
 
+		}
+		add_core_of = UGA
+		victory_points = {
+			12989 1
+		}
 	}
 	
 	provinces={
-		12719 
+		3854 7088 12989 
 	}
-	manpower= 200500
+	manpower=837500
 	buildings_max_level_factor=1.000
 }

@@ -33,3 +33,14 @@ set_popularities = {
 	communism = 2
 	monarchism = 78
 }
+
+create_country_leader = {
+	name = "Tsar Kiril I"
+	desc = "POLITICS_BORIS_III_DESC"
+	picture = "Tsar_Kiril.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarchy
+	traits = {
+		#
+	}
+}

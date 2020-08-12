@@ -22,7 +22,7 @@ set_technology = {
 set_convoys = 10
 
 set_politics = {
-	ruling_party = monarchism
+	ruling_party = democratic
 	last_election = "1936.12.20"
 	election_frequency = 48
 	elections_allowed = no
@@ -32,4 +32,14 @@ set_popularities = {
 	fascism = 1
 	communism = 1
 	monarchism = 1
+}
+
+create_country_leader = {
+	name = "Neville Chamberlain"
+	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
+	picture = "Portrait_Britain_Neville_Chamberlain.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
 }

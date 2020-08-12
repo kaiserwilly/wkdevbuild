@@ -8,7 +8,7 @@ state=
 	
 	history=
 	{
-		owner = RSE
+		owner = FIN
 		buildings = {
 			infrastructure = 5
 			9228 = {
