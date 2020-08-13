@@ -1110,10 +1110,6 @@ HOL_gateway_to_europe_eng_category = {
 				has_country_flag = HOL_gateway_to_europe_ai_timer_flag
 				NOT = { date > 1940.01.01 }
 			}
-			modifier = {
-				factor = 0
-				has_completed_focus = ENG_a_change_in_course
-			}
 		}
 
 		complete_effect = {
