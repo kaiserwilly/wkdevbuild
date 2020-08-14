@@ -795,7 +795,7 @@
  STATE_794:0 "Siece"
  STATE_795:0 "Deutschschweiz"
  STATE_796:0 "Northern Karelia"
- STATE_797:0 "Eastern Transylvania"
+ STATE_797:0 "Subcarpathians"
  STATE_798:0 "Northern Congo"
  STATE_799:0 "Österreichs Sudetenland"
  STATE_800:0 "Herzegovina"
@@ -821,4 +821,8 @@
  STATE_820:0 "Hungarian Ruthenia"
  STATE_821:0 "Southern Wallonie"
  STATE_822:0 "Sedan"
- 
+ STATE_823:0 "German New Guinea"
+ STATE_824:0 "Eastern Thrace"
+ STATE_825:0 "Yuzhne"
+ STATE_826:0 "British Libya"
+ STATE_827:0 "French Libya" 
