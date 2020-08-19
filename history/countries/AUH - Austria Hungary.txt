@@ -36,10 +36,7 @@ set_technology = {
 	fuel_refining = 1
 }
 
-set_variable = { var = ger_gateway_to_europe_influence value = 0 }
 
-set_variable = { var = wehrmacht_anger value = 0 }
-set_variable = { var = ss_anger value = 0 }
 set_research_slots = 4
 set_convoys = 350
 set_stability = 0.5 
@@ -84,6 +81,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 2
+	id = 8805
 }
 
 create_corps_commander = {
@@ -95,6 +93,7 @@ create_corps_commander = {
 	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 4
+	id = 8804
 }
 
 create_corps_commander = {
@@ -106,6 +105,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
+	id = 8802
 }
 
 create_corps_commander = {
@@ -117,6 +117,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 2
 	logistics_skill = 2
+	id = 8801
 }
 
 create_field_marshal = {
@@ -128,6 +129,7 @@ create_field_marshal = {
 	defense_skill = 1
 	planning_skill = 2
 	logistics_skill = 2
+	id = 8803
 }
 create_corps_commander = {
 	name = "Karl Eglseer"
