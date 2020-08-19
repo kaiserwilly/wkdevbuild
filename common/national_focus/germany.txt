@@ -15,614 +15,12 @@ focus_tree = {
 	}
 	
 	default = no
-
-
-#SCHACHT'S ECONOMIC PLAN
-	focus = {
-		id = GER_schacht_plan
-		icon = GFX_goal_generic_construct_civ_factory
-		x = -4
-		y = 0
-		cost = 10 
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_four_year_plan
-				bonus = 1.0
-				uses = 2
-				category = industry
-			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = hjalmar_schacht
-		}
-	}
-
-#INDUSTRIALISE PRUSSIA
-	focus = {
-		id = GER_industrialise_prussia
-		icon = GFX_goal_generic_construction
-		x = -1
-		y = 1
-		cost = 8 
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		prerequisite = {
-		focus = GER_schacht_plan
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			763 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			64 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-	    }
-	}
-
-#INDUSTRIALISE BAYERNLAND
-	focus = {
-		id = GER_industrialise_bayern
-		icon = GFX_goal_generic_construction
-		x = -1
-		y = 2
-		cost = 8 
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		prerequisite = {
-		focus = GER_schacht_plan
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			52 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			54 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-	    }
-	}
-
-#INDUSTRIALISE RHEINLAND
-	focus = {
-		id = GER_industrialise_rheinland
-		icon = GFX_goal_generic_construction
-		x = -1
-		y = 3
-		cost = 8 
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		prerequisite = {
-		focus = GER_schacht_plan
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			42 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			51 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-	    }
-	}
-
-#INDUSTRIALISE COLONIES
-	focus = {
-		id = GER_investments_colonies
-		icon = GFX_goal_generic_construct_civilian
-		x = -4
-		y = 1
-		cost = 8 
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		prerequisite = {
-		focus = GER_schacht_plan
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			773 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			541 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			546 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-	    }
-	}
-
-#INVESTMENTS EASTERN
-	focus = {
-		id = GER_investments_eastern
-		icon = GFX_goal_generic_construct_civilian
-		x = -4
-		y = 2
-		cost = 8 
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		prerequisite = {
-		focus = GER_investments_colonies
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			87 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			92 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			13 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			226 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_political_power = 125
-	    }
-	}
-
-#INVESTMENTS IN NETHERLANDS
-	focus = {
-		id = GER_investments_netherlands
-		icon = GFX_goal_generic_construct_civilian
-		x = -4
-		y = 3
-		cost = 8 
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		prerequisite = {
-		focus = GER_investments_eastern
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			35 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			7 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_political_power = 75
-	    }
-	}
-
-#REACTIVATE SIEGFRIEDSTELLUNG
-	focus = {
-		id = GER_reactivate_siegfried
-		icon = GFX_goal_generic_construct_military
-		x = -7
-		y = 1
-		cost = 10 
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		prerequisite = {
-		focus = GER_schacht_plan
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			28 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					custom_effect_tooltip = GER_west_wall_forts
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 5
-							province = 678
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 5
-							province = 6529
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 5
-							province = 1346
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 5
-							province = 3629
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 5
-							province = 11502
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 5
-							province = 9559
-							instant_build = yes
-						}
-					}
-				}
-			}
-			790 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					custom_effect_tooltip = GER_west_wall_forts
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 5
-							province = 521
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 5
-							province = 11516
-							instant_build = yes
-						}
-					}
-				}
-			}
-	    }
-	}
-
-#RHEINWALL
-	focus = {
-		id = GER_rheinwall
-		icon = GFX_goal_generic_construct_military
-		x = -7
-		y = 2
-		cost = 15 
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		prerequisite = {
-		focus = GER_reactivate_siegfried
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			50 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 6
-						province = 11640
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 6
-						province = 6712
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 6
-						province = 6542
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 6
-						province = 3530
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 6
-						province = 6568
-						instant_build = yes
-					}
-				}
-			}
-			55 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 6
-						province = 589
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 6
-						province = 6488
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 6
-						province = 6444
-						instant_build = yes
-					}
-				}
-			}
-			51 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 6
-						province = 529
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 6
-						province = 6570
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 6
-						province = 6469
-						instant_build = yes
-					}add_building_construction = {
-						type = bunker
-						level = 6
-						province = 3512
-						instant_build = yes
-					}
-				}
-			}
-	    }
-	}
-
-#OSTWALL
-	focus = {
-		id = GER_ostwall
-		icon = GFX_goal_generic_construct_military
-		x = -7
-		y = 3
-		cost = 10 
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		prerequisite = {
-		focus = GER_rheinwall
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-	    }
-	}
-
-#THE OIL AGREEMENT
-	focus = {
-		id = GER_oil_agreement
-		icon = GFX_goal_generic_oil_refinery
-		x = -4
-		y = 4
-		cost = 10 
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		prerequisite = {
-		focus = GER_ostwall
-		}
-		prerequisite = {
-		focus = GER_investments_netherlands
-		}
-		prerequisite = {
-		focus = GER_industrialise_rheinland
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			country_event = {
-			    id = wk_ger.9
-			}
-	    }
-	}
-
-#EXTRA RESEARCH SLOT
-	focus = {
-		id = GER_extra_research
-		icon = GFX_focus_research
-		x = -4
-		y = 5
-		cost = 10 
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		prerequisite = {
-		focus = GER_oil_agreement
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			add_research_slot = 1
-	    }
-	}
-##################################
-##################################
-##################################
-
+	
 #OUR PLACE IN THE SUN	
 	focus = {
 		id = GER_place_in_sun
 		icon = GFX_focus_ger_revive_kaiserreich
-		x = 8
+		x = 12
 		y = 0
 		cost = 10 
 		
@@ -641,11 +39,15 @@ focus_tree = {
 		}
 	}
 
+######################
+###POLITICAL BRANCH###
+######################
+
 #PAX GERMANICA
 	focus = {
 		id = GER_pax_germanica
 		icon = GFX_pax_germanica
-		x = 8
+		x = 12
 		y = 1
 		cost = 10
 		
@@ -669,19 +71,19 @@ focus_tree = {
 		}
 	}
 
+#####################################
+
 #BERLIN FIRST
 	focus = {
 		id = GER_berlin_first
 		icon = GFX_goal_generic_major_alliance
-		x = 13
+		x = 17
 		y = 2
 		cost = 5
 		
 		prerequisite = {
         focus = GER_pax_germanica
         }
-		
-		mutually_exclusive = { focus = GER_mitteleuropa }
 		
 		ai_will_do = {
 			factor = 100		
@@ -698,42 +100,21 @@ focus_tree = {
 		}
 	}
 
-#REVIVE THE CENTRAL POWERS
+#DECOLONISATION OF EASTERN EUROPE
 	focus = {
-		id = GER_central_powers
-		x = 13
-		y = 3
-		cost = 8
-		
-		prerequisite = {
-        focus = GER_berlin_first
-        }
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		    GER = { add_to_faction = AUH }
-		}
-	}
-
-#DISBAND LEAGUE OF NATIONS
-	focus = {
-		id = GER_disband_league
+		id = GER_decolonise_eastern
+		icon = GFX_focus_eng_decolonization
 		x = 15
 		y = 3
-		cost = 10
+		cost = 5
 		
 		prerequisite = {
         focus = GER_berlin_first
         }
+		
+		mutually_exclusive = {
+		focus = GER_claim_baltic
+		}
 		
 		ai_will_do = {
 			factor = 100		
@@ -746,148 +127,20 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = {
-				id = wk_ger.14
-			}
 		}
 	}
 
-#BREAK OFF RELATIONS WITH BRITAIN
+#AIM FOR AFRICA
 	focus = {
-		id = GER_relations_britain
-		x = 11
-		y = 3
-		cost = 8
-		
-		prerequisite = {
-        focus = GER_berlin_first
-        }
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			add_opinion_modifier = { target = ENG modifier = large_decrease }
-		}
-	}
-
-#SUBJUGATE BALTIC COUNTRIES
-	focus = {
-		id = GER_subjugate_baltic
+		id = GER_aim_africa
+		icon = GFX_focus_generic_africa_infrastructure
 		x = 14
 		y = 4
-		cost = 10
-		
-		prerequisite = {
-        focus = GER_relations_britain
-        }
-		prerequisite = {
-        focus = GER_central_powers
-        }
-		prerequisite = {
-        focus = GER_disband_league
-        }
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			country_event = {
-				id = wk_ger.11
-			}
-		}
-	}
-
-#OPERATION SCHWARZE
-	focus = {
-		id = GER_operation_schwarze
-		x = 12
-		y = 4
-		cost = 10
-		
-		prerequisite = {
-        focus = GER_relations_britain
-        }
-		prerequisite = {
-        focus = GER_central_powers
-        }
-		prerequisite = {
-        focus = GER_disband_league
-        }
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			country_event = {
-				id = wk_ger.10
-			}
-		}
-	}
-
-#STATE VISIT TO CONSTANTINOPLE
-	focus = {
-		id = GER_visit_constantinople
-		x = 13
-		y = 5
-		cost = 8
-		
-		prerequisite = {
-        focus = GER_subjugate_baltic
-        }
-		prerequisite = {
-        focus = GER_operation_schwarze
-        }
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			GER = { add_to_faction = OTM }
-		}
-	}
-	
-#MITTELEUROPA
-	focus = {
-		id = GER_mitteleuropa
-		icon = GFX_goal_generic_major_alliance
-		x = 3
-		y = 2
 		cost = 5
 		
 		prerequisite = {
-        focus = GER_pax_germanica
+        focus = GER_decolonise_eastern
         }
-		
-		mutually_exclusive = { focus = GER_berlin_first }
 		
 		ai_will_do = {
 			factor = 100		
@@ -900,455 +153,23 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		    create_faction = MITTELEUROPA
 		}
 	}
-	
-#CONGRESS OF WARSAW
+
+#CLAIM THE BALTIC THRONE
 	focus = {
-		id = GER_congress_warsaw
-		icon = GFX_former_territories
-		x = 8
+		id = GER_claim_baltic
+		icon = GFX_focus_hun_elect_a_king
+		x = 19
 		y = 3
-		cost = 15
-		
-		prerequisite = {
-        focus = GER_mitteleuropa
-		focus = GER_berlin_first
-        }
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		    country_event = {
-			    id = wk_ger.1
-			}
-		}
-	}
-
-#BERLIN CONFERENCE
-	focus = {
-		id = GER_berlin_conference
-		icon = GFX_berlin_conference
-		x = 8
-		y = 4
-		cost = 15
-		
-		prerequisite = {
-        focus = GER_congress_warsaw
-        }
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		    country_event = {
-			    id = wk_ger.2
-			}
-		}
-	}
-
-#LUXEMBOURGISH ANSCHLUSS
-	focus = {
-		id = GER_luxembourg_anschluss
-		icon = GFX_anschluss_luxemburgs
-		x = 8
-		y = 5
-		cost = 15
-		
-		prerequisite = {
-        focus = GER_berlin_conference
-        }
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			country_event = {
-			    id = wk_ger.6
-			}
-		}
-	}
-
-#VON DER MAAS BIS AN DIE MEMEL
-	focus = {
-		id = GER_von_maas
-		icon = GFX_goal_generic_position_armies
-		x = 10
-		y = 6
-		cost = 8
-		
-		prerequisite = {
-        focus = GER_luxembourg_anschluss
-        }
-		prerequisite = {
-        focus = GER_visit_constantinople
-        }
-		
-		mutually_exclusive = {
-		focus = GER_reaffirm_treaty
-		}
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-			add_state_claim = 821
-			add_state_claim = 822
-		}
-	}
-
-#REAFFIRM TREATY OF LONDON
-	focus = {
-		id = GER_reaffirm_treaty
-		x = 6
-		y = 6
-		cost = 8
-		
-		prerequisite = {
-        focus = GER_luxembourg_anschluss
-        }
-		
-		mutually_exclusive = {
-		focus = GER_von_maas
-		}
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		}
-	}
-	
-##################################
-##################################
-##################################
-
-
-
-#THE GREAT TURMOIL
-	focus = {
-		id = GER_great_turmoil
-		icon = GFX_focus_focus_fra_revolution_utmost
-		x = 22
-		y = 0
 		cost = 5
 		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		}
-	}
-
-#ENSURE THE THRONE
-	focus = {
-		id = GER_ensure_throne
-		icon = GFX_focus_generic_support_the_left_right
-		x = 22
-		y = 1
-		cost = 8
-		
 		prerequisite = {
-		focus = GER_great_turmoil
-		}
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		    add_popularity = {
-                ideology = monarchism
-                popularity = 0.1
-            }
-		}
-	}
-
-#BAN FASCISM
-	focus = {
-		id = GER_ban_fascism
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		x = 23
-		y = 2
-		cost = 8
-		
-		prerequisite = {
-		focus = GER_ensure_throne
-		}
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		    add_popularity = {
-                ideology = fascism
-                popularity = -0.1
-            }
-			add_stability = -0.05
-		}
-	}
-
-#BAN COMMUNISM
-	focus = {
-		id = GER_ban_communism
-		icon = GFX_goal_anti_comintern_pact
-		x = 21
-		y = 2
-		cost = 8
-		
-		prerequisite = {
-		focus = GER_ensure_throne
-		}
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		    add_popularity = {
-                ideology = communism
-                popularity = -0.1
-            }
-			add_stability = -0.05
-		}
-	}
-
-#1937 ELECTION
-	focus = {
-		id = GER_election
-		icon = GFX_goal_support_democracy
-		x = 22
-		y = 3
-		cost = 10
-		
-		prerequisite = {
-		focus = GER_ban_fascism
-		}
-		prerequisite = {
-		focus = GER_ban_communism
-		}
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		}
-	}
-
-#SPEAK AGAINST BOLSHEVIKS
-	focus = {
-		id = GER_speak_against_bolsheviks
-		icon = GFX_goal_generic_war_with_comintern
-		x = 19
-		y = 2
-		cost = 8
-		
-		prerequisite = {
-		focus = GER_great_turmoil
-		}
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		}
-	}
-
-#ANTI-COMMITERN
-	focus = {
-		id = GER_anti_commitern
-		x = 17
-		y = 3
-		cost = 8
-		
-		prerequisite = {
-		focus = GER_speak_against_bolsheviks
-		}
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		}
-	}
-
-#SUPPORT THE WHITES
-	focus = {
-		id = GER_support_whites
-		x = 19
-		y = 3
-		cost = 8
-		
-		prerequisite = {
-		focus = GER_speak_against_bolsheviks
-		}
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		}
-	}
-
-#PROCLAIM FINLAND
-	focus = {
-		id = GER_proclaim_finland
-		x = 17
-		y = 4
-		cost = 10
-		
-		prerequisite = {
-		focus = GER_support_whites
-		}
-		prerequisite = {
-		focus = GER_anti_commitern
-		}
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		}
-	}
-
-#FATE OF AUSTRIA
-	focus = {
-		id = GER_fate_austria
-		icon = GFX_fate_austria
-		x = 25
-		y = 2
-		cost = 8
-		
-		prerequisite = {
-		focus = GER_great_turmoil
-		}
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		}
-	}
-
-#SUPPORT HABSBURGS
-	focus = {
-		id = GER_support_habsburgs
-		icon = GFX_habsburgs
-		x = 25
-		y = 3
-		cost = 8
-		
-		prerequisite = {
-		focus = GER_fate_austria
-		}
+        focus = GER_berlin_first
+        }
 		
 		mutually_exclusive = {
-		focus = GER_support_hungarians
+		focus = GER_decolonise_eastern
 		}
 		
 		ai_will_do = {
@@ -1365,48 +186,17 @@ focus_tree = {
 		}
 	}
 
-#SUPPORT HUNGARIANS
+#SUBJUGATE LITHUANIA
 	focus = {
-		id = GER_support_hungarians
-		icon = GFX_hungarians
-		x = 27
-		y = 3
-		cost = 8
-		
-		prerequisite = {
-		focus = GER_fate_austria
-		}
-		
-		mutually_exclusive = {
-		focus = GER_support_habsburgs
-		}
-		
-		ai_will_do = {
-			factor = 100		
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-			}
-		}
-		
-		completion_reward = {
-		}
-	}
-
-#INTERVENE IN THE WAR
-	focus = {
-		id = GER_intervene_war
-		icon = GFX_intervene_war
-		x = 27
+		id = GER_subjulgate_lithuania
+		icon = GFX_focus_cze_german_puppet
+		x = 20
 		y = 4
-		cost = 10
+		cost = 5
 		
 		prerequisite = {
-		focus = GER_support_habsburgs
-		focus = GER_support_hungarians
-		}
+        focus = GER_claim_baltic
+        }
 		
 		ai_will_do = {
 			factor = 100		
@@ -1422,7 +212,62 @@ focus_tree = {
 		}
 	}
 
+#OPERATION WEISS
+	focus = {
+		id = GER_operation_weiss
+		x = 17
+		y = 4
+		cost = 5
+		
+		prerequisite = {
+        focus = GER_claim_baltic
+		focus = GER_decolonise_eastern
+        }
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
 
+#THE GATEWAY TO EUROPE
+	focus = {
+		id = GER_gateway_europe
+		x = 17
+		y = 5
+		cost = 5
+		
+		prerequisite = {
+        focus = GER_operation_weiss
+        }
+		prerequisite = {
+        focus = GER_subjulgate_lithuania
+		focus = GER_aim_africa
+        }
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+###################################
 
 
 
