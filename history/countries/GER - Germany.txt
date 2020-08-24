@@ -60,6 +60,7 @@ set_popularities = {
 
 puppet = POL
 puppet = NPR
+puppet = MOR
 
 add_ideas = {
 	GER_victors_of_ww1
