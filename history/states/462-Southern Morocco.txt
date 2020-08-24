@@ -7,7 +7,7 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = GER
+		owner = MOR
 		add_core_of = MOR
 		victory_points = {
 			4108 1 
@@ -16,7 +16,7 @@ state={
 			infrastructure = 1
 		}
 
-		add_claim_by = MOR
+		add_claim_by = GCG
 	}
 
 	provinces={
