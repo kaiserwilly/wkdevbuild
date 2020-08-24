@@ -16,7 +16,7 @@ state={
 			infrastructure = 1
 		}
 
-		add_claim_by = GCG
+		add_claim_by = MOR
 	}
 
 	provinces={
