@@ -71,6 +71,171 @@ focus_tree = {
 		}
 	}
 
+#LUXEMBOURGISH ANSCHLUSS
+	focus = {
+		id = GER_luxembourg_anschluss
+		icon = GFX_anschluss_luxemburgs
+		x = 12
+		y = 3
+		cost = 15
+		
+		prerequisite = {
+        focus = GER_mitteleuropa
+        }
+		prerequisite = {
+        focus = GER_berlin_first
+        }
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+			country_event = {
+			    id = wk_ger.6
+			}
+		}
+	}
+
+#CONGRESS OF WARSAW
+	focus = {
+		id = GER_congress_warsaw
+		icon = GFX_former_territories
+		x = 12
+		y = 4
+		cost = 15
+		
+		prerequisite = {
+        focus = GER_luxembourg_anschluss
+        }
+		prerequisite = {
+        focus = GER_submit_britain
+		focus = GER_decolonise_eastern
+        }
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		    country_event = {
+			    id = wk_ger.1
+			}
+		}
+	}
+
+#BERLIN CONFERENCE
+	focus = {
+		id = GER_berlin_conference
+		icon = GFX_berlin_conference
+		x = 12
+		y = 5
+		cost = 15
+		
+		prerequisite = {
+        focus = GER_congress_warsaw
+        }		
+		prerequisite = {
+		focus = GER_africa_concessions
+		focus = GER_aim_africa
+        }
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		    country_event = {
+			    id = wk_ger.2
+			}
+		}
+	}
+
+#VON DER MAAS BIS AN DIE MEMEL
+	focus = {
+		id = GER_von_maas
+		icon = GFX_goal_generic_position_armies
+		x = 15
+		y = 6
+		cost = 8
+		
+		prerequisite = {
+        focus = GER_gateway_europe
+        }
+		prerequisite = {
+        focus = GER_berlin_conference
+        }
+		
+		mutually_exclusive = {
+		focus = GER_reaffirm_treaty
+		}
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+			add_state_claim = 821
+			add_state_claim = 822
+		}
+	}
+
+#REAFFIRM TREATY OF LONDON
+	focus = {
+		id = GER_reaffirm_treaty
+		x = 9
+		y = 6
+		cost = 8
+		
+		prerequisite = {
+        focus = GER_berlin_conference
+        }
+		prerequisite = {
+        focus = GER_mittelmark
+        }
+		
+		mutually_exclusive = {
+		focus = GER_von_maas
+		}
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
 #####################################
 
 #BERLIN FIRST
@@ -189,7 +354,7 @@ focus_tree = {
 #SUBJUGATE LITHUANIA
 	focus = {
 		id = GER_subjulgate_lithuania
-		icon = GFX_focus_cze_german_puppet
+		icon = GFX_focus_CZE_german_puppet
 		x = 20
 		y = 4
 		cost = 5
@@ -269,7 +434,196 @@ focus_tree = {
 
 ###################################
 
+#REVIVE THE MITTELEUROPA PLAN
+	focus = {
+		id = GER_mitteleuropa
+		icon = GFX_goal_generic_major_alliance
+		x = 7
+		y = 2
+		cost = 5
+		
+		prerequisite = {
+        focus = GER_pax_germanica
+        }
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		    create_faction = MITTELEUROPA
+		}
+	}
 
+#SUBMIT TO BRITISH DEMANDS
+	focus = {
+		id = GER_submit_britain
+		icon = GFX_focus_ger_accept_british_naval_dominance
+		x = 9
+		y = 3
+		cost = 5
+		
+		prerequisite = {
+        focus = GER_mitteleuropa
+        }
+		
+		mutually_exclusive = {
+		focus = GER_interfere_volkerbund
+		}
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#AFRICA CONCESSIONS
+	focus = {
+		id = GER_africa_concessions
+		icon = GFX_goal_tfv_saf_secure_interests_in_africa
+		x = 10
+		y = 4
+		cost = 5
+		
+		prerequisite = {
+        focus = GER_submit_britain
+        }
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#INTERFERE IN DER VOLKERBUND ELECTIONS
+	focus = {
+		id = GER_interfere_volkerbund
+		x = 5
+		y = 3
+		cost = 5
+		
+		prerequisite = {
+        focus = GER_mitteleuropa
+        }
+		
+		mutually_exclusive = { focus = GER_submit_britain }
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#ISOLATE BRITAIN FROM EUROPE
+	focus = {
+		id = GER_isolate_britain
+		icon = GFX_focus_attack_britain
+		x = 4
+		y = 4
+		cost = 5
+		
+		prerequisite = {
+        focus = GER_interfere_volkerbund
+        }
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#OPERATION SCHWARZE
+	focus = {
+		id = GER_operation_schwarze
+		x = 7
+		y = 4
+		cost = 5
+		
+		prerequisite = {
+        focus = GER_interfere_volkerbund
+		focus = GER_submit_britain
+        }
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#THE MITTELMARK
+	focus = {
+		id = GER_mittelmark
+		x = 7
+		y = 5
+		cost = 5
+		
+		prerequisite = {
+        focus = GER_isolate_britain
+		focus = GER_africa_concessions
+        }
+		prerequisite = {
+        focus = GER_operation_schwarze
+        }
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
 
 
 }
