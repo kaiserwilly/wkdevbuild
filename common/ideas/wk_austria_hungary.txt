@@ -18,7 +18,66 @@ ideas = {
 			    stability_factor=-0.10 
 			}
 		}
-		
+		exploitr = {
+
+			allowed = {
+				original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {  
+			stability_weekly = -0.001
+			    political_power_cost = 0.10
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.2
+			}
+		}
+		exploitc = {
+
+			allowed = {
+				original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {  
+			stability_weekly = -0.001
+			    political_power_cost = 0.10
+			consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.2
+			}
+		}
+		exploitb = {
+
+			allowed = {
+				original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {  
+			stability_weekly = -0.001
+			    political_power_cost = 0.10
+			consumer_goods_factor = -0.05
+			industrial_capacity_dockyard = 0.2
+			}
+		}
 		habsburg = {
 			
 			allowed = {
@@ -62,5 +121,86 @@ ideas = {
 				war_support_factor = -0.05
 			}
 		}
+		local_autonomy = {
+
+			allowed = {
+				original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {  
+			    production_speed_buildings_factor = 0.1
+			}
+		}
+		cultural_indentity = {
+
+			allowed = {
+				original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			picture = generic_morale_bonus
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				conscription = 0.005
+			
+			}
+		}
+		minority_elite = {
+			
+			allowed = {
+			    original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.07
+			}
+		}
+		religious_freedom = {
+			
+			allowed = {
+			    original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_constitutional_guarantees
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
     }
 }

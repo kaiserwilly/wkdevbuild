@@ -1,0 +1,798 @@
+focus_tree = {
+	id = austro-hungarian_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AUH
+		}
+	}
+	default = no
+	focus = {
+		id = AUH_restructure_the_empire
+		icon = GFX_restructure_the_empire
+		cost = 10
+		x = 6
+		y = 0
+			ai_will_do = {
+					factor = 12
+				}
+			completion_reward = {
+					add_political_power = 200
+				}
+
+	}
+	focus = {
+		id = AUH_franz_ferdinand's_plan
+		icon = GFX_goal_tripartite_pact
+		cost = 10
+		prerequisite = {
+			focus = AUH_restructure_the_empire
+		}
+		mutually_exclusive = {
+			focus = AUH_keep_the_old_goverment
+		}
+		x = -10
+		y = 1
+		relative_position_id = AUH_restructure_the_empire
+			ai_will_do = {
+					factor = 12
+				}
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = AUH_encourage_cultural_identity
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = AUH_franz_ferdinand's_plan
+		}
+		x = 3
+		y = 1
+		relative_position_id = AUH_franz_ferdinand's_plan
+			ai_will_do = {
+					factor = 12
+				}
+			completion_reward = {
+					add_ideas = cultural_indentity
+				}
+
+	}
+	focus = {
+		id = AUH_religious_freedom
+		icon = GFX_focus_por_concordat
+		cost = 10
+		prerequisite = {
+			focus = AUH_encourage_cultural_identity
+		}
+		x = 2
+		y = 1
+		relative_position_id = AUH_encourage_cultural_identity
+			ai_will_do = {
+					factor = 12
+				}
+			completion_reward = {
+					add_ideas = religious_freedom
+				}
+
+	}
+	focus = {
+		id = AUH_keep_the_old_goverment
+		icon = GFX_goal_tripartite_pact
+		cost = 10
+		prerequisite = {
+			focus = AUH_restructure_the_empire
+		}
+		mutually_exclusive = {
+			focus = AUH_franz_ferdinand's_plan
+		}
+		x = 10
+		y = 1
+		relative_position_id = AUH_restructure_the_empire
+			ai_will_do = {
+					factor = 12
+				}
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = AUH_provoke_minoritie
+		icon = GFX_goal_continuous_suppression
+		cost = 10
+		prerequisite = {
+			focus = AUH_keep_the_old_goverment
+		}
+		mutually_exclusive = {
+			focus = AUH_cultural_deporation
+		}
+		x = 13
+		y = 2
+	completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = AUH_exploit_balkans
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH_provoke_minoritie
+		}
+		x = 11
+		y = 3
+completion_reward = {
+					add_timed_idea = {
+							idea = exploitb
+							days = 140
+						}
+				}
+	}
+	focus = {
+		id = AUH__send_the_army_in_balkans
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH_exploit_balkans
+		}
+		x = 11
+		y = 4
+		available = {
+		has_war = no
+		NOT = {
+		has_idea = exploitb
+		}
+		}
+		
+	completion_reward = {
+					SLV = {	transfer_state =  102 }
+				SLV = {	transfer_state =  816 }
+			CRO = {	transfer_state =  109 }
+			CRO = {	transfer_state =  103 }
+			CRO = {	transfer_state =  104 }
+			CRO = {	transfer_state =  800 }
+			CRO = {	transfer_state =  801 }
+			SER = {	transfer_state =  107 }
+			MNT = {	transfer_state =  105 }
+			declare_war_on = { target = SLV    type = annex_everything }
+			declare_war_on = { target = CRO    type = annex_everything }
+			declare_war_on = { target = SER    type = annex_everything }
+			declare_war_on = { target = MNT    type = annex_everything }
+			
+			MNT = {load_oob = "angrybalkrebel"}
+			SER = {load_oob = "angrybalkrebel"}
+			CRO = {load_oob = "angrybalkrebel"}
+			SLV = {load_oob = "angrybalkrebel"}
+				}
+	}
+	focus = {
+		id = AUH_crush_sofia_pact
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH__send_the_army_in_balkans
+		}
+		x = 11
+		y = 5
+completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = BUL
+				expire = 0
+			}
+			}
+	}
+	
+	focus = {
+		id = AUH_Exploit_czeck
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH_provoke_minoritie
+		}
+		x = 13
+		y = 3
+completion_reward = {
+					add_timed_idea = {
+							idea = exploitc
+							days = 140
+						}
+				}
+	}
+	focus = {
+		id = AUH_send_the_army_czeck
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH_Exploit_czeck
+		}
+		x = 13
+		y = 4
+	available = {
+	has_war = no
+		NOT = {
+		has_idea = exploitc
+		}
+		}
+		completion_reward = {
+			CZE = {	transfer_state =  803 }
+			CZE = {	transfer_state =  9 }
+			CZE = {	transfer_state =  75 }
+			declare_war_on = { target = CZE    type = annex_everything }
+	
+			CZE = {load_oob = "angryczerebel"}
+	
+				}
+	}
+	focus = {
+		id = AUH_exploit_romanian
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH_provoke_minoritie
+		}
+		x = 15
+		y = 3
+completion_reward = {
+					add_timed_idea = {
+							idea = exploitr
+							days = 140
+						}
+				}
+	}
+	focus = {
+		id = AUH_send_the_army_in_romania
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH_exploit_romanian
+		}
+		x = 15
+		y = 4
+	available = {
+	has_war = no
+		NOT = {
+		has_idea = exploitr
+		}
+		}
+			completion_reward = {
+			TNS = {	transfer_state =  82 }
+			TNS = {	transfer_state =  84 }
+			TNS = {	transfer_state =  819 }
+			TNS = {	transfer_state =  76 }
+			TNS = {	transfer_state =  83 }
+			TNS = {	transfer_state =  80 }
+			declare_war_on = { target = TNS    type = annex_everything }
+	
+			TNS = {load_oob = "angryromrebel"}
+	
+				}
+	}
+	focus = {
+		id = AUH_Institute_mandatory_austrian_language
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH_send_the_army_czeck
+		}
+		prerequisite = {
+			focus = AUH__send_the_army_in_balkans
+		}
+		prerequisite = {
+			focus = AUH_send_the_army_in_romania
+		}
+		x = 13
+		y = 5
+		completion_reward = {
+	9 = {
+	
+		remove_core_of = CZE
+
+
+			}
+		75 = {
+	
+		remove_core_of = CZE
+
+
+			}
+		225 = {
+	
+		remove_core_of = TNS
+
+
+			}
+		76 = {
+	
+		remove_core_of = TNS
+
+
+			}
+			84 = {
+	
+		remove_core_of = TNS
+
+
+			}
+			83 = {
+	
+		remove_core_of = TNS
+
+
+			}
+			82 = {
+	
+		remove_core_of = TNS
+
+
+			}
+				102 = {
+	
+		remove_core_of = SLV
+
+
+			}
+				816 = {
+	
+		remove_core_of = SLV
+
+
+			}
+				109 = {
+	
+		remove_core_of = CRO
+
+
+			}
+			103 = {
+	
+		remove_core_of = CRO
+
+
+			}
+			105 = {
+	
+		remove_core_of = MNT
+
+
+			}
+			107 = {
+	
+		remove_core_of = SER
+
+
+			}
+			}
+	}
+	focus = {
+		id = AUH_end_the_romanian_kingdoms
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH_send_the_army_in_romania
+		}
+		x = 15
+		y = 5
+completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ROM
+				expire = 0
+			}
+			}
+	}
+	focus = {
+		id = AUH_cultural_deporation
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = AUH_keep_the_old_goverment
+		}
+		mutually_exclusive = {
+			focus = AUH_provoke_minoritie
+		}
+		x = 19
+		y = 2
+	completion_reward = {
+					add_political_power = -100
+				}
+	}
+	focus = {
+		id = AUH_Ask_neigbouring_country_to_handel_them 
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		prerequisite = {
+			focus = AUH_cultural_deporation
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+				GER = {
+							country_event = {
+									id = AUHUN.2
+									days = 0
+								}
+						}
+				ITA = {
+							country_event = {
+									id = AUHUN.1
+									days = 0
+								}
+						}
+				ROM = {
+							country_event = {
+									id = AUHUN.3
+									days = 0
+								}
+						}
+				OTM = {
+							country_event = {
+									id = AUHUN.4
+									days = 0
+								}
+						}
+					}
+	}
+	focus = {
+		id = AUH_Mass_deportation_of_czeck
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH_Ask_neigbouring_country_to_handel_them 
+		}
+		x = 17
+		y = 4
+		completion_reward = {
+			AUH = {
+							country_event = {
+									id = AUHUN.5
+									days = 0
+								}
+						}
+		}
+	}
+	focus = {
+		id = AUH_Mass_deportation_of_balkans
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH_Ask_neigbouring_country_to_handel_them 
+		}
+		x = 19
+		y = 4
+	completion_reward = {
+			AUH = {
+							country_event = {
+									id = AUHUN.6
+									days = 0
+								}
+						}
+		}
+	}
+	focus = {
+		id = AUH_Mass_deportation_of_romanian
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH_Ask_neigbouring_country_to_handel_them 
+		}
+		x = 21
+		y = 4
+	completion_reward = {
+			AUH = {
+							country_event = {
+									id = AUHUN.7
+									days = 0
+								}
+						}
+		}
+	}
+	focus = {
+		id = Cultural_unity
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH_Mass_deportation_of_czeck
+		}
+		prerequisite = {
+			focus = AUH_Mass_deportation_of_balkans
+		}
+		prerequisite = {
+			focus = AUH_Mass_deportation_of_romanian
+		}
+		x = 19
+		y = 5
+		completion_reward = {
+					remove_ideas = multinational_state
+				}
+	}
+	focus = {
+		id = AUH_outline_the_federal_states
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		prerequisite = {
+			focus = AUH_franz_ferdinand's_plan
+		}
+		x = -3
+		y = 1
+		relative_position_id = AUH_franz_ferdinand's_plan
+			ai_will_do = {
+					factor = 12
+				}
+			completion_reward = {
+					803 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					76 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					819 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					69 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					74 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					88 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					91 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					43 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					4 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					109 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					736 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					816 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					45 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					70 = {
+							add_extra_state_shared_building_slots = 1
+						}
+					815 = {
+							add_extra_state_shared_building_slots = 1
+						}
+				}
+
+	}
+	focus = {
+		id = AUH_ensure_equal_rights
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		prerequisite = {
+			focus = AUH_outline_the_federal_states
+		}
+		x = 0
+		y = 1
+		relative_position_id = AUH_outline_the_federal_states
+			ai_will_do = {
+					factor = 12
+				}
+			completion_reward = {
+					remove_ideas = multinational_state
+				}
+
+	}
+	focus = {
+		id = AUH_educate_the_masses
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = AUH_ensure_equal_rights
+		}
+		x = 0
+		y = 1
+		relative_position_id = AUH_ensure_equal_rights
+			ai_will_do = {
+					factor = 12
+				}
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = AUH_increase_local_autonomy
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 10
+		prerequisite = {
+			focus = AUH_educate_the_masses
+		}
+		x = 0
+		y = 1
+		relative_position_id = AUH_educate_the_masses
+			ai_will_do = {
+					factor = 12
+				}
+			completion_reward = {
+					add_ideas = local_autonomy
+				}
+
+	}
+	focus = {
+		id = AUH_minority_elite
+		icon = GFX_focus_research2
+		cost = 10
+		prerequisite = {
+			focus = AUH_encourage_cultural_identity
+		}
+		x = -2
+		y = 1
+		relative_position_id = AUH_encourage_cultural_identity
+			ai_will_do = {
+					factor = 12
+				}
+			completion_reward = {
+					add_ideas = minority_elite
+				}
+
+	}
+	focus = {
+		id = AUH_invest_in_neglected_areas
+		icon = GFX_focus_generic_industry_2
+		cost = 10
+		prerequisite = {
+			focus = AUH_religious_freedom
+		}
+		prerequisite = {
+			focus = AUH_minority_elite
+		}
+		x = 2
+		y = 1
+		relative_position_id = AUH_minority_elite
+			ai_will_do = {
+					factor = 12
+				}
+			completion_reward = {
+					limit = {
+							owns_state = 84
+						}
+					84 = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					limit = {
+							owns_state = 104
+						}
+					104 = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					limit = {
+							owns_state = 45
+						}
+					45 = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AUH_connect_the_states
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = AUH_invest_in_neglected_areas
+		}
+		x = 0
+		y = 1
+		relative_position_id = AUH_invest_in_neglected_areas
+			ai_will_do = {
+					factor = 12
+				}
+			completion_reward = {
+					every_owned_state = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AUH_a_prosperous_country
+		icon = GFX_focus_generic_industry_3
+		cost = 15,00
+		prerequisite = {
+			focus = AUH_connect_the_states
+		}
+		prerequisite = {
+			focus = AUH_increase_local_autonomy
+		}
+		x = -3
+		y = 1
+		relative_position_id = AUH_connect_the_states
+			ai_will_do = {
+					factor = 12
+				}
+			completion_reward = {
+					add_stability = 0.1
+					add_tech_bonus = {
+							name = industry_bonus
+							bonus = 1
+							uses = 2
+							category = industry
+						}
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 1.0
+							uses = 1
+							category = fleet_in_being_tree
+						}
+				}
+
+	}
+	focus = {
+		id = AUH__destroys_the_minoritie_identies
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AUH_Institute_mandatory_austrian_language
+		}
+		x = 13
+		y = 6
+		completion_reward = {
+					remove_ideas = multinational_state
+				}
+	}
+	
+}
