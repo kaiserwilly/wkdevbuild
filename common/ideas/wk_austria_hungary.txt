@@ -18,7 +18,66 @@ ideas = {
 			    stability_factor=-0.10 
 			}
 		}
-		
+		exploitr = {
+
+			allowed = {
+				original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {  
+			stability_weekly = -0.001
+			    political_power_cost = 0.10
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.2
+			}
+		}
+		exploitc = {
+
+			allowed = {
+				original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {  
+			stability_weekly = -0.001
+			    political_power_cost = 0.10
+			consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.2
+			}
+		}
+		exploitb = {
+
+			allowed = {
+				original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {  
+			stability_weekly = -0.001
+			    political_power_cost = 0.10
+			consumer_goods_factor = -0.05
+			industrial_capacity_dockyard = 0.2
+			}
+		}
 		habsburg = {
 			
 			allowed = {
