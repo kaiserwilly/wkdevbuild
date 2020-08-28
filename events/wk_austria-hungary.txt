@@ -1,0 +1,627 @@
+add_namespace = AUHUN
+
+
+country_event = {
+	id = AUHUN.1
+	title = AUHUN.1.t
+	desc = AUHUN.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+		option = { #oui
+		name = fra.1.a 
+						AUH = {
+							set_country_flag = ITAacceptdeport
+						}
+			
+		}
+				option = { #non
+		name = fra.1.b
+
+		}
+}
+
+country_event = {
+	id = AUHUN.2
+	title = AUHUN.2.t
+	desc = AUHUN.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+		option = { #oui
+		name = fra.1.a 
+						AUH = {
+							set_country_flag = GERacceptdeport
+						}
+			
+		}
+				option = { #non
+		name = fra.1.b
+
+		}
+}
+country_event = {
+	id = AUHUN.3
+	title = AUHUN.3.t
+	desc = AUHUN.3.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+		option = { #oui
+		name = fra.1.a 
+						AUH = {
+							set_country_flag = ROMacceptdeport
+						}
+			
+		}
+				option = { #non
+		name = fra.1.b
+
+		}
+}
+country_event = {
+	id = AUHUN.4
+	title = AUHUN.4.t
+	desc = AUHUN.4.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+		option = { #oui
+		name = fra.1.a 
+						AUH = {
+							set_country_flag = OTMacceptdeport
+						}
+			
+		}
+				option = { #non
+		name = fra.1.b
+
+		}
+}
+country_event = {
+	id = AUHUN.5
+	title = AUHUN.5.t
+	desc = AUHUN.5.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+		option = { #oui
+
+			
+		name = newsab.2.a
+			trigger = {
+			has_country_flag = OTMacceptdeport
+		}
+				9 = {
+			add_manpower = -800000
+		remove_core_of = CZE
+
+
+			}
+		75 = {
+	add_manpower = -800000
+		remove_core_of = CZE
+
+
+			}
+		348 = {
+	add_manpower = 1600000
+		add_core_of = CZE
+
+
+			}	
+		}
+		option = { #oui
+
+			
+		name = newsab.2.a
+			trigger = {
+			has_country_flag = ROMacceptdeport
+		}
+				9 = {
+			add_manpower = -800000
+		remove_core_of = CZE
+
+
+			}
+		75 = {
+	add_manpower = -800000
+		remove_core_of = CZE
+
+
+			}
+		77 = {
+	add_manpower = 1600000
+		add_core_of = CZE
+
+
+			}	
+		}
+				option = { #oui
+
+			
+		name = newsab.2.a
+			trigger = {
+			has_country_flag = GERacceptdeport
+		}
+				9 = {
+			add_manpower = -800000
+		remove_core_of = CZE
+
+
+			}
+		75 = {
+	add_manpower = -800000
+		remove_core_of = CZE
+
+
+			}
+		61 = {
+	add_manpower = 1600000
+		add_core_of = CZE
+
+
+			}	
+		}
+				option = { #oui
+
+			
+		name = newsab.2.a
+			trigger = {
+			has_country_flag = ITAacceptdeport
+		}
+				9 = {
+			add_manpower = -800000
+		remove_core_of = CZE
+
+
+			}
+		75 = {
+	add_manpower = -800000
+		remove_core_of = CZE
+
+
+			}
+		156 = {
+	add_manpower = 1600000
+		add_core_of = CZE
+
+
+			}	
+		}
+}
+country_event = {
+	id = AUHUN.6
+	title = AUHUN.6.t
+	desc = AUHUN.6.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+		option = { #oui
+
+			
+		name = newsab.2.a
+			trigger = {
+			has_country_flag = OTMacceptdeport
+		}
+				816 = {
+			add_manpower = -200000
+		remove_core_of = SLV
+
+
+			}
+			102 = {
+			
+		remove_core_of = SLV
+
+
+			}
+		109 = {
+	add_manpower = -800000
+		remove_core_of = CRO
+
+
+			}
+			
+	103 = {
+	add_manpower = -600000
+		remove_core_of = CRO
+
+
+			}
+	105 = {
+	
+		remove_core_of = MNT
+
+
+			}
+			107 = {
+	add_manpower = -400000
+		remove_core_of = SER
+
+
+			}
+		348 = {
+	add_manpower = 200000
+		add_core_of = SER
+		add_core_of = CRO
+
+			}	
+		}
+		option = { #oui
+
+			
+		name = newsab.2.a
+			trigger = {
+			has_country_flag = ROMacceptdeport
+		}
+							816 = {
+			add_manpower = -200000
+		remove_core_of = SLV
+
+
+			}
+			102 = {
+			
+		remove_core_of = SLV
+
+
+			}
+		109 = {
+	add_manpower = -800000
+		remove_core_of = CRO
+
+
+			}
+			
+	103 = {
+	add_manpower = -600000
+		remove_core_of = CRO
+
+
+			}
+	105 = {
+	
+		remove_core_of = MNT
+
+
+			}
+			107 = {
+	add_manpower = -400000
+		remove_core_of = SER
+
+
+			}
+		77 = {
+		add_manpower = 200000
+		add_core_of = SER
+		add_core_of = CRO
+
+
+			}	
+		}
+				option = { #oui
+
+			
+		name = newsab.2.a
+			trigger = {
+			has_country_flag = GERacceptdeport
+		}
+							816 = {
+			add_manpower = -200000
+		remove_core_of = SLV
+
+
+			}
+			102 = {
+			
+		remove_core_of = SLV
+
+
+			}
+		109 = {
+	add_manpower = -800000
+		remove_core_of = CRO
+
+
+			}
+			
+	103 = {
+	add_manpower = -600000
+		remove_core_of = CRO
+
+
+			}
+	105 = {
+	
+		remove_core_of = MNT
+
+
+			}
+			107 = {
+	add_manpower = -400000
+		remove_core_of = SER
+
+
+			}
+		61 = {
+		add_manpower = 200000
+		add_core_of = SER
+		add_core_of = CRO
+
+
+			}	
+		}
+				option = { #oui
+
+			
+		name = newsab.2.a
+			trigger = {
+			has_country_flag = ITAacceptdeport
+		}
+				816 = {
+			add_manpower = -200000
+		remove_core_of = SLV
+
+
+			}
+			102 = {
+			
+		remove_core_of = SLV
+
+
+			}
+		109 = {
+	add_manpower = -800000
+		remove_core_of = CRO
+
+
+			}
+			
+	103 = {
+	add_manpower = -600000
+		remove_core_of = CRO
+
+
+			}
+	105 = {
+	
+		remove_core_of = MNT
+
+
+			}
+			107 = {
+	add_manpower = -400000
+		remove_core_of = SER
+
+
+			}
+		156 = {
+		add_manpower = 200000
+		add_core_of = SER
+		add_core_of = CRO
+
+
+			}	
+		}
+}
+country_event = {
+	id = AUHUN.7
+	title = AUHUN.7.t
+	desc = AUHUN.7.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+		option = { #oui
+
+			
+		name = newsab.2.a
+			trigger = {
+			has_country_flag = OTMacceptdeport
+		}
+				82 = {
+			add_manpower = -200000
+		remove_core_of = TNS
+
+
+			}
+			83 = {
+			
+		remove_core_of = TNS
+
+
+			}
+		76 = {
+	add_manpower = -800000
+		remove_core_of = TNS
+
+
+			}
+			
+	84 = {
+	add_manpower = -600000
+		remove_core_of = TNS
+
+
+			}
+	80 = {
+	
+		remove_core_of = TNS
+
+
+			}
+
+		348 = {
+	add_manpower = 1600000
+		add_core_of = ROM
+		
+
+			}	
+		}
+		option = { #oui
+
+			
+		name = newsab.2.a
+			trigger = {
+			has_country_flag = ROMacceptdeport
+		}
+						82 = {
+			add_manpower = -200000
+		remove_core_of = TNS
+
+
+			}
+			83 = {
+			
+		remove_core_of = TNS
+
+
+			}
+		76 = {
+	add_manpower = -800000
+		remove_core_of = TNS
+
+
+			}
+			
+	84 = {
+	add_manpower = -600000
+		remove_core_of = TNS
+
+
+			}
+	80 = {
+	
+		remove_core_of = TNS
+
+
+			}
+		77 = {
+		add_manpower = 1600000
+		add_core_of = ROM
+		
+
+
+			}	
+		}
+				option = { #oui
+
+			
+		name = newsab.2.a
+			trigger = {
+			has_country_flag = GERacceptdeport
+		}
+				82 = {
+			add_manpower = -200000
+		remove_core_of = TNS
+
+
+			}
+			83 = {
+			
+		remove_core_of = TNS
+
+
+			}
+		76 = {
+	add_manpower = -800000
+		remove_core_of = TNS
+
+
+			}
+			
+	84 = {
+	add_manpower = -600000
+		remove_core_of = TNS
+
+
+			}
+	80 = {
+	
+		remove_core_of = TNS
+
+
+			}
+		61 = {
+		add_manpower = 1600000
+		add_core_of = ROM
+		
+
+
+			}	
+		}
+				option = { #oui
+
+			
+		name = newsab.2.a
+			trigger = {
+			has_country_flag = ITAacceptdeport
+		}
+				82 = {
+			add_manpower = -200000
+		remove_core_of = TNS
+
+
+			}
+			83 = {
+			
+		remove_core_of = TNS
+
+
+			}
+		76 = {
+	add_manpower = -800000
+		remove_core_of = TNS
+
+
+			}
+			
+	84 = {
+	add_manpower = -600000
+		remove_core_of = TNS
+
+
+			}
+	80 = {
+	
+		remove_core_of = TNS
+
+
+			}
+		156 = {
+	add_manpower = 1600000
+		add_core_of = ROM
+		
+
+
+			}	
+		}
+}
