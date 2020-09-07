@@ -138,7 +138,7 @@ music = {
 	volume = 0.65
 }
 music = {
-	name = "drum_bun"
-	file = ".drumbunogg"
+	name = "Drum Bun"
+	file = "drumbun.ogg"
 	volume = 0.65
 }
