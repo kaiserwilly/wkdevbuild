@@ -286,7 +286,7 @@ music = {
 	
 	chance = {
 		modifier = {
-			factor = 4
+			factor = 40
 			has_war = yes
 			TAG = ROM
 		}		
