@@ -281,3 +281,14 @@ music = {
 		}		
 	}	
 }
+music = {
+	song = "drum_bun"
+	
+	chance = {
+		modifier = {
+			factor = 4
+			has_war = yes
+			TAG = ROM
+		}		
+	}	
+}
