@@ -36,11 +36,12 @@ set_technology = {
 	fuel_refining = 1
 }
 
-
+set_naval_oob = "AUH_1936_naval"
 set_research_slots = 4
 set_convoys = 350
 set_stability = 0.5 
 set_war_support = 0.3
+
 
 set_politics = {
 	ruling_party = monarchism
