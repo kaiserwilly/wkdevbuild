@@ -275,7 +275,7 @@ ideas = {
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
-			}			
+						
 
 			allowed = {
 				original_tag = ROM
