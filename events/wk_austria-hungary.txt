@@ -630,29 +630,24 @@ country_event = {
     title = AUHUN.9.t
     desc = AUHUN.9.d
     picture = GFX_report_event_journalists_speech
-    
-	fire_only_once = yes
+    fire_only_once = yes
 	is_triggered_only = yes
-	trigger = {
-	}
 	
     option = { #Federalisation
         name = AUHUN.9.a
 
         ai_chance = {
-            base = 20
-
+            base = 10
         }
-        set_country_flag = federalisation
+        set_country_flag = Federalisation
     }
 
     option = { #Centarlization
         name = AUHUN.9.b
         ai_chance = {
-            base = 20
-
+            base = 10
         }
-        set_country_flag = centralization
+        set_country_flag = Centralization
 
     }
 	}
@@ -662,12 +657,15 @@ country_event = {
     desc = AUHUN.8
     pictue = GFX_report_event_journalists_speech
     trigger = { 
-        date > 1936.04.10 
-        date < 1936.04.15 
+        date > 1936.02.10 
+        date < 1936.02.11 
     }
     option = {
         name = AUHUN.8.a
         kill_ideology_leader = monarchism
-		AUH = { country_event = AUHUN.9 }	
+		AUH = {
+			country_event = { days = 5 id = AUHUN.9 }
+			
+		}	
     }
 }
