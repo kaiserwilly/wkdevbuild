@@ -80,13 +80,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				ship_hull_heavy = {
-					hg_attack = 0.1
-				}
+				navy_capital_ship_attack_factor = 0.1
 				navy_submarine_attack_factor = 0.1
-				ship_hull_light = {
-					lg_attack = 0.1
-				}
+				navy_screen_attack_factor = 0.1
 				
 			}
 		}
