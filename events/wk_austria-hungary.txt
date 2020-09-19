@@ -626,14 +626,17 @@ country_event = {
 		}
 }
 country_event = {
-    id = AUHUN.9 #the coronation of Otto
-    title = AUHUN.9.t
-    desc = AUHUN.9.d
-    picture = GFX_report_event_journalists_speech
-    fire_only_once = yes
+    id = AUHUN.9 #otto
+    title = AUHUN.9
+    desc = AUHUN.9
+    pictue = GFX_report_event_journalists_speech
 	is_triggered_only = yes
-	
-    option = { #Federalisation
+	fire_only_once = yes
+	trigger = {
+	date > 1936.02.15
+	date < 1936.04.15
+	}
+	 option = { #Federalisation
         name = AUHUN.9.a
 
         ai_chance = {
@@ -650,22 +653,6 @@ country_event = {
         set_country_flag = Centralization
 
     }
+
 	}
-country_event = { 
-    id = AUHUN.8 #karl commits die
-    title = AUHUN.8
-    desc = AUHUN.8
-    pictue = GFX_report_event_journalists_speech
-    trigger = { 
-        date > 1936.02.10 
-        date < 1936.02.11 
-    }
-    option = {
-        name = AUHUN.8.a
-        kill_ideology_leader = monarchism
-		AUH = {
-			country_event = { days = 5 id = AUHUN.9 }
-			
-		}	
-    }
-}
+ 
