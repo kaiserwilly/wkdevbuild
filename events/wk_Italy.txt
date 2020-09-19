@@ -1,0 +1,70 @@
+﻿###########################
+######Italian Events#######
+###########################
+
+add_namespace = Italy
+
+
+
+
+	#offer alliance to Romania
+	country_event = {
+	id = Italy.1
+	title = Italy.1.t
+	desc = Italy.1.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #Romania accepts
+		name = Italy.1.a
+		ai_chance = {
+			factor = 100
+			
+           }
+		}
+		ITA = { country_event = Italy.2}
+     
+}
+option = { #Romania declines
+		name = Italy.1.b
+     ai_chance = {
+			factor = 0
+			
+           }
+		}
+		ROM = { country_event = Italy.3}
+}
+	}
+	country_event = {
+	id = Italy.2
+	title = Italy.2.t
+	desc = Italy.2.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #for trajan!
+	 set_rule = { can_create_factions = yes }
+			set_rule = { can_create_factions = yes }
+			create_faction = "latin_alliance"
+      	name = Italy.2.a
+		add_to_faction = ROM
+     
+}
+	}
+	country_event = {
+	id = Italy.3
+	title = Italy.3.t
+	desc = Italy.3.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #we don't need you anyways
+		name = Italy.3.a
+		
+     
+}
+	}
+	
