@@ -136,6 +136,7 @@ focus = {
 	completion_reward = {
 	    remove_ideas = { hohenzollern carols_lifestyle}
         country_event = { id = wk_rom.1 hours = 12 }
+		retire_ideology_leader = monarchism
 	}
 }	
     
@@ -845,18 +846,25 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
 			add_tech_bonus = {
-				name = rom__bonus
-				bonus = 1.0
-				technology = fighterI
-				technology = fighterII
-				technology = fighterIII
-				technology = close_air_supportI
-				technology = close_air_supportII
-				technology = close_air_supportIII
-			
-		}
+				name = fighter_bonus
+				bonus = 2.0
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 2.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
 	}    
 }
 
