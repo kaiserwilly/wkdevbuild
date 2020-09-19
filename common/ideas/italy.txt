@@ -56,7 +56,115 @@ ideas = {
 				justify_war_goal_time = -0.05
 			}
 		}
-
+		semita_in_gloria = {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+           
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		meditarennean_dominance = {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+           
+			
+			removal_cost = -1
+			
+			modifier = {
+				ship_hull_heavy = {
+					hg_attack = 0.1
+				}
+				navy_submarine_attack_factor = 0.1
+				ship_hull_light = {
+					lg_attack = 0.1
+				}
+				
+			}
+		}
+		italian_militarism = {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+           
+			
+			removal_cost = -1
+			
+			modifier = {
+					conscription = 0.01
+					army_core_defence_factor = 0.1
+				
+			}
+		}
+		italian_mining = {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+           
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.10	
+				
+			}
+		}
+		all_roads_lead_to_rome = {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+           
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				
+			}
+		}
+		rome_restored = {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+           
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.3
+				army_core_attack_factor = 0.3
+				industrial_capacity_factory = 0.2
+				research_speed_factor = 0.2
+				
+			}
+		}
+		road_to_prosperity = {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+           
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.2
+				
+			}
+		}
+        
 		ITA_german_millitary_cooperation_focus = {
 
 			picture = german_advisors
