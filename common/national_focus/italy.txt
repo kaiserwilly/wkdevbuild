@@ -932,6 +932,175 @@
 
 		}
 	}
+	focus = {
+		id = ITA_dominate_africa
+		icon = GFX_focus_focus_fra_ratify_stresa
+		prerequisite = { focus = ITA_integrate_algeria focus = ITA_integrate_tunisia focus = ITA_integrate_france		}
+	    x = 0
+	    y = 1
+		cost = 10
+		relative_position_id = ITA_integrate_france
+        
+       
+
+		available_if_capitulated = yes
+		
+
+		bypass = {
+			NOT = { country_exists = ENG }
+			NOT = { country_exists = MOR }
+			
+			
+		}
+
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = ENG }
+			create_wargoal = { type = annex_everything target = MOR }
+	
+			
+		}
+		}
+		focus = {
+	id = ITA_integrate_britannia
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = ITA_dominate_africa }
+		available = {
+			ITA = {
+				controls_state = 122
+				controls_state = 123
+				controls_state = 338
+				controls_state = 127
+				controls_state = 126
+				controls_state = 125
+				controls_state = 129
+				controls_state = 130
+				controls_state = 132
+				controls_state = 131
+				
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = ITA_dominate_africa
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+
+	
+				add_state_core = 122
+				add_state_core = 123
+				add_state_core = 338
+				add_state_core = 127
+				add_state_core = 126
+				add_state_core = 125
+				add_state_core = 129
+				add_state_core = 130
+				add_state_core = 132
+				add_state_core = 131
+
+		}
+	}
+	focus = {
+	id = ITA_integrate_morocco
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = ITA_dominate_africa }
+		available = {
+			ITA = {
+				controls_state = 461
+				controls_state = 462
+				controls_state = 783
+				controls_state = 699
+				controls_state = 738
+				controls_state = 290
+				controls_state = 118
+				
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = ITA_dominate_africa
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+
+	
+				
+				add_state_core = 461
+				add_state_core = 462
+				add_state_core = 783
+				add_state_core = 699
+				add_state_core = 738
+				add_state_core = 290
+				add_state_core = 118
+
+		}
+	}
+	focus = {
+		id = ITA_romae_veri_heredes
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = ITA_integrate_morocco }
+		prerequisite = { focus = ITA_integrate_britannia }
+		prerequisite = { focus = ITA_integrate_egypt }
+		prerequisite = { focus = ITA_integrate_asia_minor }
+		prerequisite = { focus = ITA_integrate_the_middle_east }
+		x = -2
+		y = 1
+		relative_position_id = ITA_integrate_britannia
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+ completion_reward = {
+
+			add_ideas = rome_restored
+			#+20% production efficency#+30% division attack and defense on core territory#+20% research speed
+		set_cosmetic_tag = SPQR_UNIFIED
+			
+			hidden_effect = {
+				news_event = { id = wtt_news.64 hours = 6 }
+				set_global_flag = form_roman_empire_flag
+				if = {
+					limit = {
+						has_country_leader = { ruling_only = yes name = "Benito Mussolini" }
+					}
+					kill_country_leader = yes
+					create_country_leader = {
+						name = "Augustus Mussolini"
+						desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+						picture = "GFX_portrait_italy_emperor_mussolini"
+						expire = "1965.1.1"
+					ideology = fascism_ideology
+						traits = {
+							
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_idea = victor_emmanuel
+					}
+					remove_ideas = victor_emmanuel
+				}
+			}
+		}
+			}
+	
+		
 	
 	
 	
