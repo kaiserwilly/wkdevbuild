@@ -12,7 +12,7 @@
 	
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1100 }
+	continuous_focus_position = { x = 50 y = 1500 }
 
 	focus = {
 		id = ITA_consolidate_power
@@ -1063,7 +1063,8 @@
 			factor = 1
 		}
 
-		available_if_capitulated = yes
+		available_if_capitulated = no
+		is_subject = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
  completion_reward = {
 
@@ -2202,7 +2203,7 @@
 			
 	}
 	focus = {
-		id = ITA_arms_factories
+		id = ITA_military_factories
 		icon = GFX_goal_generic_construct_mil_factory
 		text = industrial_effort_2
 		prerequisite = { focus = ITA_topolino
@@ -2655,4 +2656,316 @@
 			 add_timed_idea = { idea = road_to_prosperity days = 547 }   
 		}
 	}
+	 focus = {
+		id = ITA_long-term_economic_planning
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = ITA_il_percorso_verso_la_prosperità }
+	    x = -3
+	    y = 1
+        relative_position_id = ITA_il_percorso_verso_la_prosperità
+        cost = 10
+		available_if_capitulated = yes
+		
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			 add_ideas = long-term_economic_planning  
+			 #construction speed +20%
+		}
+	}
+	focus = {
+		id = ITA_women's_suffrage
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = ITA_long-term_economic_planning }
+	    x = -1
+	    y = 1
+        relative_position_id = ITA_long-term_economic_planning
+        cost = 10
+		available_if_capitulated = yes
+		
+
+		bypass = {
+			
+		}
+        available = { has_government = democratic}
+		completion_reward = {
+			 random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+							is_on_continent = europe
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}				
+			}
+		}
+	}
+	focus = {
+		id = ITA_european_league
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = ITA_women's_suffrage }
+		x = 0
+		y = 1
+		relative_position_id = ITA_women's_suffrage
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			set_rule = { can_create_factions = yes }
+			create_faction = "european_league"
+		    add_stability = 0.1
+			add_war_support = 0.05
+			ROM = { country_event = Italy.1}
+		}
+	}
+	focus = {
+		id = ITA_invite_spain
+		icon = GFX_invite_spain
+		prerequisite = { focus = ITA_european_league }
+		
+		x = -2
+		y = 1
+		relative_position_id = ITA_european_league
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		   
+			SPR = { country_event = Italy.4 }
+		} 
+                  
+	}
+	focus = {
+		id = ITA_invite_britain
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = ITA_european_league }
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_european_league
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		   
+			ENG = { country_event = Italy.7 }
+		} 
+                  
+	}
+	focus = {
+		id = ITA_invite_portugal
+		icon = GFX_invite_portugal
+		prerequisite = { focus = ITA_european_league }
+		
+		x = 2
+		y = 1
+		relative_position_id = ITA_european_league
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		   
+			POR = { country_event = Italy.10 }
+		} 
+                  
+	}
+	focus = {
+		id = ITA_the_league_economics_board
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = ITA_invite_portugal focus = ITA_invite_britain focus = ITA_invite_spain }
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_invite_britain focus
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+        available = { is_in_faction = yes}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		   add_ideas = the_league_economics_board
+			every_country = {
+				limit = {
+					is_in_faction_with = ITA
+				}
+				add_ideas = the_league_economics_board
+			}
+		} 
+                  
+	}
+	focus = {
+		id = ITA_the_joint_defense_council
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = ITA_the_league_economics_board }
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_the_league_economics_board
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+        available = { is_in_faction = yes}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		   add_ideas = the_joint_defense_council
+			every_country = {
+				limit = {
+					is_in_faction_with = ITA
+				}
+				add_ideas = the_joint_defense_council
+			}
+		} 
+                  
+	}
+	focus = {
+		id = ITA_tackle_the_german-austrian_threat
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = ITA_the_joint_defense_council }
+	    x = 0
+	    y = 1
+		cost = 10
+		relative_position_id = ITA_the_joint_defense_council
+        
+       
+
+		available_if_capitulated = yes
+		
+
+		bypass = {
+			NOT = { country_exists = GER }
+			NOT = { country_exists = AUH }
+			
+		}
+
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = GER }
+			create_wargoal = { type = puppet_wargoal_focus target = AUH }
+			
+		}
+	}
+	focus = {
+		id = ITA_the_global_peacekeepers
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = ITA_the_joint_defense_council }
+	    x = 0
+	    y = 1
+		cost = 10
+		relative_position_id = ITA_the_joint_defense_council
+        
+       
+
+		available_if_capitulated = yes
+		
+        available = { is_in_faction = yes}
+		bypass = {
+			
+			
+		}
+
+		completion_reward = {
+			add_ideas = the_global_peacekeepers
+			every_country = {
+				limit = {
+					is_in_faction_with = ITA
+				}
+				add_ideas = the_global_peacekeepers
+			}
+		}
+	}
+	
 }
