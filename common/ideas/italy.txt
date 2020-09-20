@@ -146,6 +146,23 @@ ideas = {
 				
 			}
 		}
+		the_league_economics_board = {			
+			
+			allowed = {
+				
+			}
+           
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.5
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				local_resources_factor = 0.05	
+				
+			}
+		}
 		road_to_prosperity = {			
 			
 			allowed = {
@@ -160,7 +177,35 @@ ideas = {
 				
 			}
 		}
-        
+        the_joint_defense_council =  {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+           
+			
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed = 0.20
+				
+			}
+		}
+		ITA_the_global_peacekeepers =  {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+           
+			
+			removal_cost = -1
+			
+			modifier = {
+				generate_wargoal_tension = -0.9
+			    justify_war_goal_time = -0.5
+				
+			}
+		}
 		ITA_german_millitary_cooperation_focus = {
 
 			picture = german_advisors
