@@ -22,8 +22,9 @@ add_namespace = Italy
 			factor = 100
 			
            }
+		   ITA = { country_event = Italy.2}
 		}
-		ITA = { country_event = Italy.2}
+		
      
 }
 option = { #declines
@@ -32,8 +33,9 @@ option = { #declines
 			factor = 0
 			
            }
+		   ITA = { country_event = Italy.3}
 		}
-		ITA = { country_event = Italy.3}
+		
 }
 	}
 	country_event = {
@@ -81,8 +83,9 @@ option = { #declines
 			factor = 100
 			
            }
+		   ITA = { country_event = Italy.5}
 		}
-		ITA = { country_event = Italy.5}
+		
      
 }
 option = { #declines
@@ -91,8 +94,9 @@ option = { #declines
 			factor = 0
 			
            }
+		   ITA = { country_event = Italy.6}
 		}
-		ITA = { country_event = Italy.6}
+		
 }
 	}
 	country_event = {
@@ -138,8 +142,9 @@ option = { #declines
 			factor = 100
 			
            }
+		   ITA = { country_event = Italy.8}
 		}
-		ITA = { country_event = Italy.8}
+		
      
 }
 option = { #declines
@@ -148,8 +153,9 @@ option = { #declines
 			factor = 0
 			
            }
+		   ITA = { country_event = Italy.9}
 		}
-		ITA = { country_event = Italy.9}
+		
 }
 	}
 	country_event = {
@@ -196,8 +202,9 @@ option = { #declines
 			factor = 100
 			
            }
+		   ITA = { country_event = Italy.11}
 		}
-		ITA = { country_event = Italy.11}
+		
      
 }
 option = { #declines
@@ -206,8 +213,9 @@ option = { #declines
 			factor = 0
 			
            }
+		   ITA = { country_event = Italy.12}
 		}
-		ITA = { country_event = Italy.12}
+		
 }
 	}
 	country_event = {
