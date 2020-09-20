@@ -16,7 +16,7 @@ add_namespace = Italy
 	
 	is_triggered_only = yes
 
-	option = { #Romania accepts
+	option = { #accepts
 		name = Italy.1.a
 		ai_chance = {
 			factor = 100
@@ -26,14 +26,14 @@ add_namespace = Italy
 		ITA = { country_event = Italy.2}
      
 }
-option = { #Romania declines
+option = { #declines
 		name = Italy.1.b
      ai_chance = {
 			factor = 0
 			
            }
 		}
-		ROM = { country_event = Italy.3}
+		ITA = { country_event = Italy.3}
 }
 	}
 	country_event = {
@@ -63,6 +63,178 @@ option = { #Romania declines
 
 	option = { #we don't need you anyways
 		name = Italy.3.a
+		
+     
+}
+	}
+	country_event = {
+	id = Italy.4
+	title = Italy.4.t
+	desc = Italy.4.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #accepts
+		name = Italy.4.a
+		ai_chance = {
+			factor = 100
+			
+           }
+		}
+		ITA = { country_event = Italy.5}
+     
+}
+option = { #declines
+		name = Italy.4.b
+     ai_chance = {
+			factor = 0
+			
+           }
+		}
+		ITA = { country_event = Italy.6}
+}
+	}
+	country_event = {
+	id = Italy.5
+	title = Italy.5.t
+	desc = Italy.5.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { 
+	
+      	name = Italy.5.a
+		add_to_faction = SPR
+     
+}
+	}
+	country_event = {
+	id = Italy.6
+	title = Italy.6.t
+	desc = Italy.6.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #we don't need you anyways
+		name = Italy.6.a
+		
+     
+}
+	}
+	country_event = {
+	id = Italy.7
+	title = Italy.7.t
+	desc = Italy.7.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #accepts
+		name = Italy.7.a
+		ai_chance = {
+			factor = 100
+			
+           }
+		}
+		ITA = { country_event = Italy.8}
+     
+}
+option = { #declines
+		name = Italy.7.b
+     ai_chance = {
+			factor = 0
+			
+           }
+		}
+		ITA = { country_event = Italy.9}
+}
+	}
+	country_event = {
+	id = Italy.8
+	title = Italy.8.t
+	desc = Italy.8.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #for trajan!
+	
+      	name = Italy.8.a
+		add_to_faction = ENG
+     
+}
+	}
+	country_event = {
+	id = Italy.9
+	title = Italy.9.t
+	desc = Italy.9.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #we don't need you anyways
+		name = Italy.6.a
+		
+     
+}
+	}
+	
+	country_event = {
+	id = Italy.10
+	title = Italy.10.t
+	desc = Italy.10.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #accepts
+		name = Italy.10.a
+		ai_chance = {
+			factor = 100
+			
+           }
+		}
+		ITA = { country_event = Italy.11}
+     
+}
+option = { #declines
+		name = Italy.10.b
+     ai_chance = {
+			factor = 0
+			
+           }
+		}
+		ITA = { country_event = Italy.12}
+}
+	}
+	country_event = {
+	id = Italy.11
+	title = Italy.11.t
+	desc = Italy.11.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #for trajan!
+	
+      	name = Italy.11.a
+		add_to_faction = POR
+     
+}
+	}
+	country_event = {
+	id = Italy.12
+	title = Italy.12.t
+	desc = Italy.12.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	option = { #we don't need you anyways
+		name = Italy.12.a
 		
      
 }
