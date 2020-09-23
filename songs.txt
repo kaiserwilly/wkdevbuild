@@ -282,7 +282,7 @@ music = {
 	}	
 }
 music = {
-	song = "Drum Bun"
+	song = "drum_bun"
 	
 	chance = {
 		modifier = {

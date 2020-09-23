@@ -16,6 +16,7 @@ ideas = {
 
 			modifier = {  
 			    stability_factor=-0.10 
+				conscription_factor = -0.7
 			}
 		}
 		exploitr = {

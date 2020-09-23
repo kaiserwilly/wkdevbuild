@@ -1,3 +1,9 @@
+###########################
+# German Events
+###########################
+
+add_namespace = germany
+
 ############# Weltkrieg Events ##############
 
 #############################################
@@ -503,4 +509,89 @@ country_event = {
 			}
 		}
  	}
+}
+
+# German-Austrian Treaty (Austria)
+country_event = {
+	id = wk_ger.15
+	title = wk_ger.15.t
+	desc = wk_ger.15.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.15.a	#sounds good
+		GER = {
+			country_event = { days = 1 id = wk_ger.16 }
+			
+		}
+		add_tech_bonus = {
+			name = AUH_germna_treaty
+			ahead_reduction = 1
+			technology = basic_medium_tank
+		}
+		add_tech_bonus = {
+			name = AUH_german_treaty
+			bonus = 1.0
+			uses = 2
+			category = armor
+		}
+	}
+	
+	option = {
+		name = germany.15.b	#no way 
+		
+		ai_chance = { factor = 0 }
+		add_political_power = -10
+		
+		GER = {
+			country_event = { days = 1 id = wk_ger.17 }
+		}
+	}
+}
+
+# Austria Accepts German-Austrian Treaty
+country_event = {
+	id = wk_ger.16
+	title = wk_ger.16.t
+	desc = wk_ger.16.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.16.a	#yay
+		
+		add_tech_bonus = {
+			name = GER_austrian_treaty
+			ahead_reduction = 1
+			technology = basic_medium_tank
+		}
+		add_tech_bonus = {
+			name = GER_austrian_treaty
+			bonus = 1.0
+			uses = 2
+			category = armor
+		}
+		
+	}
+}
+
+# Austria Rejects German-Austrian Treaty
+country_event = {
+	id = wk_ger.17 #nein
+	title = wk_ger.17.t
+	desc = wk_ger.17.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.17.a
+		
+	}
+}
+
+
 }

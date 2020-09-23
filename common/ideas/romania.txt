@@ -182,6 +182,10 @@ ideas = {
 			
 			available = {
 				if = {
+					
+					has_completed_focus = ROM_capitalism
+				}
+				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
@@ -264,13 +268,14 @@ ideas = {
 			available = {
 				if = {
 					
-					
+					has_completed_focus = ROM_national_socialism
 				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
-			}			
+			}
+						
 
 			allowed = {
 				original_tag = ROM

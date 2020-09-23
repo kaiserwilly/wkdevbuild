@@ -1,0 +1,49 @@
+focus_tree = {
+	id = american_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+
+	initial_show_position = {
+		x = 0
+	}
+
+	
+	default = no
+	focus = {
+		id = the_future_of_america
+		icon = 
+		x = 0
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			}
+		}
+	}
+}

@@ -10,6 +10,7 @@ state={
 		owner = AUH
 		add_core_of = AUH
 		add_core_of = TRT
+		add_core_of = ITA
 		buildings = {
 			infrastructure = 2
 			6626 = {
