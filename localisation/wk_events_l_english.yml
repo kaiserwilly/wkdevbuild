@@ -1,11 +1,13 @@
 ﻿l_english:
  #GERMAN EVENTS
  wk_ger.1.t:0 "Congress of Warsaw"
- wk_ger.1.d:0 "Almost 20 years have past since the Weltkrieg came to an end and Eastern Europe remains the same as before. That is destroying our diplomatic relations with the whole world, especially with Great Britain and the USSR. Something is necessary to be done or it will trigger another war. To avoid a war, Kaiser has decided to do a conference to discuss about the future of Eastern Europe."
+ wk_ger.1.d:0 "Almost 20 years have past since the Weltkrieg came to an end and Eastern Europe remains the same as before. This is destroying our diplomatic relations with the whole world, especially with United Kingdom. Something is necessary to be done or it will trigger another war. To avoid a war, Kaiser has decided to hold a conference to discuss about the future of Eastern Europe."
  wk_ger.1.a:0 "It's better to ease the tension"
  wk_ger.1.b:0 "We must take our rightful lands back"
  wk_ger.1.c:0 "We must annex everything"
  wk_ger.2.t:0 "Berlin Conference Renewal"
+ wk_ger.2.d:0 "Not only had we been betrayed by European nations in 1884, but also when the Treaty of Frankfurt was signed in 1916. However, once we've got "Our Place in the Sun", we're able to recovery from those betrayals we had suffered, thus we have decided to hold a new conference to redraw the borders in Africa, since they don't represent the balance of power nowadays."
+ wk_ger.2.a:0 "Make our Demands"
  wk_ger.6.t:0 "Anschluss Luxemburgs"
  wk_ger.9.t:0 "The Oil Agreement"
  wk_ger.10.t:0 "Operation Schwarze"
