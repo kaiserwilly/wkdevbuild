@@ -2678,7 +2678,7 @@
 		}
 	}
 	focus = {
-		id = ITA_women's_suffrage
+		id = ITA_womens_suffrage
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = ITA_long-term_economic_planning }
 	    x = -1
