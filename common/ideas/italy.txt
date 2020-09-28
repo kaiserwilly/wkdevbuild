@@ -191,7 +191,7 @@ ideas = {
 				
 			}
 		}
-		ITA_the_global_peacekeepers =  {			
+		the_global_peacekeepers =  {			
 			
 			allowed = {
 				original_tag = "ITA"
