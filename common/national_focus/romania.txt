@@ -1111,7 +1111,6 @@ focus = {
 		prerequisite = { focus = ROM_southern_threat }
 		
 		  available = {
-		  NOT = { has_war_with = AUH }
             is_subject = no
             has_army_manpower { size > 400000 }
 
@@ -1123,6 +1122,12 @@ focus = {
         controls_state = 819
     }
 	}
+		 bypass = {
+			OR = {
+             NOT = { country_exists = AUH }
+             NOT = { has_war_with = AUH }
+         }
+		 }
 		x = 0
 		y = 1
 		relative_position_id = ROM_southern_threat

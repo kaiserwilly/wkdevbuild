@@ -125,10 +125,17 @@
        
 
 		available_if_capitulated = yes
-		
+		available = {
+            is_subject = no
+            has_army_manpower { size > 750000 }
+
+      }
 
 		bypass = {
-			NOT = { country_exists = AUH }
+			OR = {
+             NOT = { country_exists = AUH }
+             NOT = { has_war_with = AUH }
+         }
 			
 		}
 
