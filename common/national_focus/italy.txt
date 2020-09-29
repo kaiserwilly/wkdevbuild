@@ -2670,7 +2670,7 @@
 		prerequisite = { focus = ITA_il_percorso_verso_la_prosperita }
 	    x = -3
 	    y = 1
-        relative_position_id = ITA_il_percorso_verso_la_prosperita
+        relative_position_id = il_percorso_verso_la_prosperita
         cost = 10
 		available_if_capitulated = yes
 		
