@@ -1125,7 +1125,7 @@ focus = {
 		 bypass = {
 			OR = {
              NOT = { country_exists = AUH }
-             NOT = { has_war_with = AUH }
+             has_war_with = AUH
          }
 		 }
 		x = 0
