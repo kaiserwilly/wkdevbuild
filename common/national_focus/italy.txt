@@ -128,8 +128,10 @@
 		
 
 		bypass = {
-			NOT = { country_exists = AUH }
-			has_war_with = AUH
+			OR = {
+             NOT = { country_exists = AUH }
+             has_war_with = AUH
+         }
 		}
 
 		completion_reward = {
