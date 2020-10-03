@@ -122,7 +122,10 @@
 		cost = 10
 		relative_position_id = ITA_the_balkan_strategy
         
-       
+       available = {
+            is_subject = no
+            has_army_manpower { size > 750000 }
+	}
 
 		available_if_capitulated = yes
 		
