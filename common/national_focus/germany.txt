@@ -1,0 +1,543 @@
+#######################
+#####GERMAN EMPIRE#####
+#######################
+
+focus_tree = {
+	id = german_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	
+	default = no
+
+#OUR PLACE IN THE SUN	
+	focus = {
+		id = GER_place_in_sun
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 0
+		y = 0
+		cost = 1 
+		
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+			add_timed_idea = { idea = place_in_sun  days = 365 }
+		}
+	}
+	
+#GERMAN IMPERIALISM	
+	focus = {
+		id = GER_german_imperialism
+		icon = GFX_focus_ger_return_of_the_kaiser
+		x = -13
+		y = 1
+		cost = 1
+		
+		prerequisite = {
+        focus = GER_place_in_sun
+        }
+	
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#OPERATION BALTIKUM
+	focus = {
+		id = GER_operation_baltikum
+		x = -18
+		y = 2
+		cost = 1
+		
+		prerequisite = {
+        focus = GER_german_imperialism
+        }
+	
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#SCHWARZ PLAN
+	focus = {
+		id = GER_schwarz_plan
+		x = -13
+		y = 2
+		cost = 1
+		
+		prerequisite = {
+        focus = GER_german_imperialism
+        }
+	
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#OPERATION GOLF
+	focus = {
+		id = GER_operation_golf
+		x = -8
+		y = 2
+		cost = 1
+		
+		prerequisite = {
+        focus = GER_german_imperialism
+        }
+	
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#PAX GERMANICA
+	focus = {
+		id = GER_pax_germanica
+		icon = GFX_pax_germanica
+		x = 10
+		y = 1
+		cost = 1
+		
+		prerequisite = {
+        focus = GER_place_in_sun
+        }
+	
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#AGE OF REVOLUTIONS
+	focus = {
+		id = GER_age_revolution
+		x = 0
+		y = 2
+		cost = 1
+		
+		prerequisite = {
+        focus = GER_pax_germanica
+		focus = GER_german_imperialism
+        }
+	
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#AUSTRIA'S COLLAPSE
+	focus = {
+		id = GER_austria_collapse
+		x = 0
+		y = 3
+		cost = 1
+		
+		prerequisite = {
+        focus = GER_age_revolution
+        }
+	
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#RUSSIAN CIVIL WAR
+	focus = {
+		id = GER_russia_civil_war
+		x = 0
+		y = 3
+		cost = 1
+		
+		prerequisite = {
+        focus = GER_age_revolution
+        }
+	
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#RUSSIAN CIVIL WAR
+	focus = {
+		id = GER_russia_civil_war
+		x = 0
+		y = 3
+		cost = 1
+		
+		prerequisite = {
+        focus = GER_age_revolution
+        }
+	
+		ai_will_do = {
+			factor = 100		
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+	#army
+	focus = {
+		id = GER_reform_the_army
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 30
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			
+			
+			army_experience = 10
+
+			
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+					
+		}
+	}
+	focus = {
+		id = GER_modernize_small_arms
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = GER_reform_the_army }
+		x = 4
+		y = 2
+		relative_position_id = GER_reform_the_army
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+ completion_reward = {
+		add_tech_bonus = {
+				name = infantry_weapons_boost
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+			}
+	}
+	focus = {
+		id = GER_modernize_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = GER_modernize_small_arms }
+		x = 0
+		y = 2
+		relative_position_id = GER_modernize_small_arms
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = arty_bonus
+				bonus = 1.0
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = GER_austrian_tank_agreement
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = GER_reform_the_army }
+		available = {
+			NOT = { has_completed_focus = GER_anti_soviet_pact }
+			OR = {
+				NOT = { has_completed_focus = GER_bulwark_against_bolshevism }
+				NOT = { has_completed_focus = GER_the_great_red_menace }
+			}
+		}
+		#cancel = { 
+		#	OR = {
+		#		has_war_with = AUH
+		#		NOT = { country_exists = AUH }
+		#	} 
+		#}
+		bypass = { 
+			OR = {
+				has_war_with = AUH
+				NOT = { country_exists = AUH }
+				has_completed_focus = GER_support_the_hungarians
+
+			}
+		}
+
+		x = 2
+		y = 2
+		relative_position_id = GER_reform_the_army
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			AUH = {
+				country_event = { id = wk_ger.15 days = 1 }
+				custom_effect_tooltip = needs_approval
+			}
+			
+			}
+		}
+	
+
+	
+
+	focus = {
+		id = GER_further_study_armor
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = GER_austrian_tank_agreement }
+		x = 0
+		y = 2
+		relative_position_id = GER_austrian_tank_agreement
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			# Balance research bonus to 2 techs in land_doctrine
+			army_experience = 20
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				name = mech_army_bonus
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				technology = advanced_medium_tank
+				technology = mechanised_infantry
+			}	
+			
+		}
+	}
+	focus = {
+		id = GER_die_luftwaffe
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = GER_reform_the_army}
+		x = -2
+		y = 2
+		relative_position_id = GER_reform_the_army
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { 
+			air_experience = 25
+
+			add_ideas = GER_die_luftwaffe
+			
+			
+			
+		}
+	}
+	focus = {
+		id = GER_fighter_innovation
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = GER_die_luftwaffe }
+		x = -1
+		y = 2
+		relative_position_id = GER_die_luftwaffe
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 2.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+				
+			}
+		
+			
+			
+		}
+		}
+	focus = {
+		id = GER_cas_innovation
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = GER_die_luftwaffe }
+		x = 1
+		y = 2
+		relative_position_id = GER_die_luftwaffe
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		completion_reward = {
+			air_experience = 25
+		add_tech_bonus = {
+		    	name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 2
+				category = cas_bomber
+			}
+			
+			
+		}
+		}
+	focus = {
+		id = GER_rocketry_focus
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = GER_modernize_artillery }
+		prerequisite = { focus = GER_further_study_armor }
+		prerequisite = { focus = GER_cas_innovation }
+		prerequisite = { focus = GER_fighter_innovation } 
+		x = -2
+		y = 1
+		relative_position_id = GER_further_study_armor
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_ideas = GER_rocketry_idea
+			add_tech_bonus = {
+				name = GER_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = GER_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = jet_technology
+			}
+		}
+	}
+	
+}	
