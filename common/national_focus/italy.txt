@@ -46,7 +46,7 @@
 	    x = 19
 	    y = 1
 		cost = 10
-        mutually_exclusive = { focus = ITA_il_percorso_verso_la_prosperita }
+        mutually_exclusive = { focus = ITA_il_percorso_verso_la_prosperità }
        
 
 		available_if_capitulated = yes
@@ -1022,7 +1022,6 @@
 				controls_state = 462
 				controls_state = 783
 				controls_state = 699
-				controls_state = 738
 				controls_state = 290
 				controls_state = 118
 				
@@ -1124,7 +1123,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes
-        prerequisite = { focus = ITA_il_percorso_verso_la_prosperita
+        prerequisite = { focus = ITA_il_percorso_verso_la_prosperità
                      focus = ITA_semita_in_gloria	
 	     }
 		completion_reward = {
@@ -1800,13 +1799,13 @@
 	
 	focus = {
 		id = ITA_the_italian_economy
-		prerequisite = { focus = ITA_il_percorso_verso_la_prosperita
+		prerequisite = { focus = ITA_il_percorso_verso_la_prosperità
                      focus = ITA_semita_in_gloria	
 	     }
 		icon = GFX_goal_generic_production2
 		x = 4
 		y = 1
-		relative_position_id = ITA_il_percorso_verso_la_prosperita
+		relative_position_id = ITA_il_percorso_verso_la_prosperità
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2209,7 +2208,7 @@
 			
 	}
 	focus = {
-		id = ITA_heavy_factories
+		id = ITA_military_factories
 		icon = GFX_goal_generic_construct_mil_factory
 		text = industrial_effort_2
 		prerequisite = { focus = ITA_topolino
@@ -2644,7 +2643,7 @@
 	#WORLDPOLICEBOO#
 	################
     focus = {
-		id = ITA_il_percorso_verso_la_prosperita
+		id = ITA_il_percorso_verso_la_prosperità
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = ITA_consolidate_power }
 	    x = 5
@@ -2665,10 +2664,10 @@
 	 focus = {
 		id = ITA_long-term_economic_planning
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = ITA_il_percorso_verso_la_prosperita }
+		prerequisite = { focus = ITA_il_percorso_verso_la_prosperità }
 	    x = -3
 	    y = 1
-        relative_position_id = ITA_il_percorso_verso_la_prosperita
+        relative_position_id = ITA_il_percorso_verso_la_prosperità
         cost = 10
 		available_if_capitulated = yes
 		
@@ -2683,7 +2682,7 @@
 		}
 	}
 	focus = {
-		id = ITA_womens_suffrage
+		id = ITA_women's_suffrage
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = ITA_long-term_economic_planning }
 	    x = -1
@@ -2779,10 +2778,10 @@
 	focus = {
 		id = ITA_european_league
 		icon = GFX_focus_generic_the_giant_wakes
-		prerequisite = { focus = ITA_womens_suffrage }
+		prerequisite = { focus = ITA_women's_suffrage }
 		x = 0
 		y = 1
-		relative_position_id = ITA_womens_suffrage
+		relative_position_id = ITA_women's_suffrage
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
